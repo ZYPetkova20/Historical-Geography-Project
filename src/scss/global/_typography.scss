@@ -5,9 +5,13 @@ h4,
 h5,
 h6{
     font-family: 'TeX Gyre Adventor Bold';
+    color:var(--primaryTCWM);
+
 }
 a, p{
     font-family: 'sf_pro_displaythin';
+    text-decoration: none;
+    color:var(--primaryTCWM);
 }
 ::selection {
     color:var(--accentTCWM);

@@ -8,7 +8,6 @@ html{
 body{
     background-color: var(--primaryCWM);
 }
-
 #startup-content-wrapper{
     @include flex(column,flex-end,center);
     width:100%;
@@ -44,15 +43,15 @@ body{
     text-align: center;
     line-height: 3rem;
 }
-.scroll-down {
+#scroll-down {
     height: 50px;
     width: 30px;
-    border: 2px solid black;
+    border: 2px solid var(--primaryTCWM);
     position: relative;
     border-radius: 50px;
 }
-.scroll-down::before,
-.scroll-down::after {
+#scroll-down::before,
+#scroll-down::after {
     content: "";
     position: absolute;
     top: 20%;
@@ -60,12 +59,12 @@ body{
     height: 10px;
     width: 10px;
     transform: translate(-50%, -100%) rotate(45deg);
-    border: 2px solid black;
+    border: 2px solid var(--primaryTCWM);
     border-top: transparent;
     border-left: transparent;
     animation: scroll-down 1s ease-in-out infinite;
 }
-.scroll-down::before {
+#scroll-down::before {
     top: 30%;
     animation-delay: 0.3s;
 }
@@ -91,7 +90,7 @@ main{
     width:100%;
     display: flex;
     flex-direction: column;
-    background-image: url(../../images/section-background.png);
+    background-image: url(../../../dist/images/sectionBackground.png);
 }
 section{
     @include flex(row,center,flex-end);

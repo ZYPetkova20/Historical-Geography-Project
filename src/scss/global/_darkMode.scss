@@ -1,0 +1,21 @@
+@use '../util/_colors.scss' as *;
+
+.light-mode{
+    --primaryCWM: #{$primaryCWM};
+    --primaryTCWM: #{$primaryTCWM};
+    --accentTCWM: #{$accentTCWM};
+    --navBackgroundC:#{$navBackgroundC};
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --primaryCWM:#{$primaryCDM};
+        --primaryTCWM:#{$primaryTCDM};
+        --navBackgroundC:#{$navBackgroundCDM};
+    }
+}
+.dark-mode{
+    --primaryCWM:#{$primaryCDM};
+    --primaryTCWM:#{$primaryTCDM};
+    --navBackgroundC:#{$navBackgroundCDM};
+}

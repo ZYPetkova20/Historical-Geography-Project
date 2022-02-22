@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="dist/images/newtLogo.png">
     <link rel="stylesheet" href="dist/css/page/index.css">
     <title>Main page</title>
     <!--For the custom fonts-->
@@ -14,10 +15,11 @@
     <!--Custom cursor-->
         <div class="cursor">
         </div>
+    <!--page content-->
     <div id="nav-wrapper">
         <a href="index.html">
             <div id="logo-wrapper">
-                <img src="dist/images/newtLogo.png" alt="Newt logo">
+                <img src="dist/images/newtLogo.png" alt="Newt logo" id="logoImage">
             </div>
         </a>
         <nav>
@@ -39,7 +41,7 @@
         </nav>
         <div id="white-dark-mode-button-wrapper">
             <label>
-                <input type="checkbox" id="dark-mode-button">
+                <input type="checkbox" id="dark-mode-button" onclick="darkMode()">
                 <span class="check" ></span>
             </label>
         </div>
@@ -54,12 +56,12 @@
             </div>
             <div id="scroll-more-icon">
                 <a href="#america-section">
-                    <div class="scroll-down"></div>
+                    <div id="scroll-down"></div>
                 </a>
             </div>
         </div>    
     </div>
-    <main>
+    <main id="index-main"> <!--the id is in order to change the background image in dark mode-->
         <section id="america-section">
             <div class="section-content-wrapper">
                 <div class="img-wrapper">
@@ -132,8 +134,9 @@
         </section>
     </main>
     <footer>
-        <img src="dist/images/footer-background.png" alt="Mountain image">
+        <img src="dist/images/footerBackground.png" alt="Mountain image" id="footer-background">
     </footer>
     <script src="dist/js/cursor.js"></script>
-</body>
+    <script src="dist/js/darm-mode.js"></script>
+</body> 
 </html>

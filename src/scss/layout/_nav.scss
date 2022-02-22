@@ -13,12 +13,17 @@
     animation-name: startAnimation;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    background-color: hsla(240, 4%, 90%,.7);
+    background-color: var(--navBackgroundC);
 }
 
 #logo-wrapper{
     @include flex(row, center, center);
     width:100px;
+    height:100%;
+}
+#white-dark-mode-button-wrapper{
+    @include flex(row,center,center);
+    width:120px;
     height:100%;
 }
 
@@ -41,11 +46,6 @@ nav{
     }
 }
 
-#white-dark-mode-button-wrapper{
-    @include flex(row,center,center);
-    width:100px;
-    height:100%;
-}
 input[type="checkbox"]{
     appearance: none;
     visibility: hidden;

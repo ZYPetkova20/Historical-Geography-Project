@@ -1,20 +1,19 @@
 $primaryCWM: #E5E5E7; //primary color in white mode
-$footerCWM: #525252;  //primary footer color in white mode
 $primaryTCWM:#000000; //primary text color in white mode
-$accentTCWM: #DAA520; //accent rext color in white mode
+$navBackgroundC:hsla(240, 4%, 90%,.7); //primary color for the nav background in white mode
+
+$primaryCDM: #525252; //primary color in dark mode
+$primaryTCDM:#ffffff; //primary text color in dark mode
+$navBackgroundCDM:hsla(0, 0%, 32%,0.7);//primary color for the nav background in dark mode
+
+$accentTCWM: #DAA520; //it will not change no matter the color mode
 
 $cursorOutline:hsla(0, 0%, 58%, 0.4);//default cursor color 
 $cursorOutlineHoverLinks:hsla(0, 0%, 58%, 0.9);//when the cursor is on link
 
 :root{
     --primaryCWM: #{$primaryCWM};
-    --footerCWM: #{$footerCWM};
     --primaryTCWM: #{$primaryTCWM};
     --accentTCWM: #{$accentTCWM};
+    --navBackgroundC:#{$navBackgroundC};
 }
-
-// @media (prefers-color-scheme: dark){
-//     :root{
-//         --primaryWM: #{$primaryWM};
-//     }
-// }
