@@ -1,0 +1,146 @@
+@use '../util/_utilForward.scss' as *;
+@use '../global/_globalForward.scss' as *;
+@use '../layout/_layoutForward.scss' as *;
+
+html{
+    scroll-snap-type: y mandatory;
+}
+body{
+    background-color: var(--primaryCWM);
+}
+
+#startup-content-wrapper{
+    @include flex(column,flex-end,center);
+    width:100%;
+    height:100%;
+    scroll-snap-align:start;
+}
+#startup-content{
+    width:100%;
+    height:60%;
+    @include flex(column, flex-end, center);
+}   
+#startup-text-wrapper{
+    width:100%;
+    @include flex(column, center, center);
+}
+#scroll-more-icon{
+    width:100%;
+    height:100%;
+    @include flex(row, center, center);
+}
+#startup-title-one{
+    font-size:rem($nF);
+    letter-spacing: $bLetterSpasing;
+    color:var(--accentTCWM);
+    line-height: 0rem;
+    text-align: center;
+    margin-bottom:-10px;
+}
+#startup-title-two{
+    font-size:rem($ntF);
+    letter-spacing: $bLetterSpasing;
+    color:var(--primaryTCWM);
+    text-align: center;
+    line-height: 3rem;
+}
+.scroll-down {
+    height: 50px;
+    width: 30px;
+    border: 2px solid black;
+    position: relative;
+    border-radius: 50px;
+}
+.scroll-down::before,
+.scroll-down::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border: 2px solid black;
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::before {
+    top: 30%;
+    animation-delay: 0.3s;
+}
+@keyframes scroll-down {
+    0% {
+      /* top:20%; */
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      top: 90%;
+      opacity: 0;
+    }
+}
+
+
+main{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../images/section-background.png);
+}
+section{
+    @include flex(row,center,flex-end);
+    width:100%;
+    height:100vh;
+    scroll-snap-align:start;
+}
+.section-content-wrapper{
+    @include flex(row, space-between,center);
+    width:100%;
+    height: calc(100% - $navHeight); //normall viewport but without the nav height, for better layout
+}
+.text-outer{
+    @include flex(row, center, center);
+    width:50%;
+    height:100%;
+}
+.img-wrapper{
+    @include flex(row, center, center);
+    width:50%;
+    height:100%;
+}
+.text-wrapper{
+    @include flex(column, space-between, space-between);
+    min-width:500px;
+    height:400px;
+}
+.section-title{
+    font-size: rem($ntF);
+    letter-spacing: $bLetterSpasing;
+    margin:0px;
+    width:500px;
+}
+.section-text{
+    font-size: rem($sF);
+    letter-spacing: $nLetterSpasing;
+    width:500px;
+    margin:0px;
+}
+.section-learn-more{
+    font-size: rem($stF);
+    letter-spacing: $bLetterSpasing;
+    margin:0px;
+}
+.toAddMoreHeight{
+    height:450px;
+
+        .section-title{
+            font-size: rem($ntF - 5);
+        }
+        
+}

@@ -1,0 +1,32 @@
+{
+  "name": "historical-geography-project",
+  "version": "1.0.0",
+  "description": "Team NEWT",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp",
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZYPetkova20/Historical-Geography-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZYPetkova20/Historical-Geography-Project/issues"
+  },
+  "homepage": "https://github.com/ZYPetkova20/Historical-Geography-Project#readme",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "cssnano": "^5.0.17",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "postcss": "^8.4.6",
+    "sass": "^1.49.7"
+  }
+}

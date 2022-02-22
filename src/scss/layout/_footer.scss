@@ -1,0 +1,7 @@
+@use '../util/_utilForward.scss' as *;
+@use '../global/_globalForward.scss' as *;
+
+footer{
+    width:100%;
+    scroll-snap-align:center;
+}

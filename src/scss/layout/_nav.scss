@@ -1,0 +1,96 @@
+@use '../util/_utilForward.scss' as *;
+@use '../global/_globalForward.scss' as *;
+
+#nav-wrapper{
+    @include flex(row, space-between, center);
+    width:100%;
+    height:$navHeight;
+    position: fixed;
+    top:-100px;
+    border-bottom-style: solid;
+    border-bottom-color: $navBorderColor;
+    border-width: 1px;
+    animation-name: startAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    background-color: hsla(240, 4%, 90%,.7);
+}
+
+#logo-wrapper{
+    @include flex(row, center, center);
+    width:100px;
+    height:100%;
+}
+
+nav{
+    @include flex(row, space-between, center);
+    width:1000px;
+    height:100%;
+        a{
+            font-size:calc(rem($nF - 10));
+            letter-spacing: $nLetterSpasing;
+        }
+}
+
+@keyframes startAnimation {
+    0%{
+        top:-100px;
+    }
+    100%{
+        top:0px;
+    }
+}
+
+#white-dark-mode-button-wrapper{
+    @include flex(row,center,center);
+    width:100px;
+    height:100%;
+}
+input[type="checkbox"]{
+    appearance: none;
+    visibility: hidden;
+    display: none;
+}
+.check{
+    position: relative;
+    display: block;
+    width:50px;
+    height:25px;
+    background-color: #9AA2A9;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.5s; 
+}
+input[type="checkbox"]:checked ~ .check{
+    background: #fff;
+}
+.check:before{
+    content:'';
+    position: absolute;
+    top:3px;
+    left:3px;
+    background-color: #fff;
+    width:19px;
+    height:19px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+input[type="checkbox"]:checked ~ .check:before{
+    transform: translate(-50px );
+}
+.check:after{
+    content:'';
+    position: absolute;
+    top:3px;
+    left:3px;
+    background-color: #fff;
+    width:19px;
+    height:19px;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform: translate( 50px);
+}
+input[type="checkbox"]:checked ~ .check:after{
+    transform: translate(0px);
+    background-color: #9AA2A9;
+}
