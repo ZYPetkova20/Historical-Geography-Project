@@ -14,6 +14,7 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     background-color: var(--navBackgroundC);
+    z-index: 100;
 }
 
 #logo-wrapper{
@@ -21,21 +22,21 @@
     width:100px;
     height:100%;
 }
+nav{
+    @include flex(row, space-between, center);
+    width:1000px;
+    height:100%;
+        a{
+            font-size:rem($nF - 10) ;
+            letter-spacing: $nLetterSpasing;
+        }
+}
 #white-dark-mode-button-wrapper{
     @include flex(row,center,center);
     width:120px;
     height:100%;
 }
 
-nav{
-    @include flex(row, space-between, center);
-    width:1000px;
-    height:100%;
-        a{
-            font-size:calc(rem($nF - 10));
-            letter-spacing: $nLetterSpasing;
-        }
-}
 
 @keyframes startAnimation {
     0%{
@@ -93,4 +94,21 @@ input[type="checkbox"]:checked ~ .check:before{
 input[type="checkbox"]:checked ~ .check:after{
     transform: translate(0px);
     background-color: #9AA2A9;
+}
+
+@media (max-width:1400px){   
+    #logo-wrapper{
+        width:80px;
+    }
+    nav{
+
+        width:900px;
+            a{
+                font-size:rem($nF - 12);
+                letter-spacing: $nLetterSpasing;
+            }
+    }
+    #white-dark-mode-button-wrapper{
+        width:80px;
+    }
 }

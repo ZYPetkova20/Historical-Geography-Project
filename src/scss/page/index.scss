@@ -90,7 +90,7 @@ main{
     width:100%;
     display: flex;
     flex-direction: column;
-    background-image: url(../../../dist/images/sectionBackground.png);
+    background-image: url(../../dist/images/sectionBackground.png);
 }
 section{
     @include flex(row,center,flex-end);
@@ -135,11 +135,62 @@ section{
     letter-spacing: $bLetterSpasing;
     margin:0px;
 }
-.toAddMoreHeight{
-    height:450px;
+#first-circumnavigation .section-title{
+    font-size: rem($ntF - 5);
+    width:500px;
+}
+#sea-routh-india-section .text-wrapper{
+    height:430px;
+}
+#north-pole .text-wrapper{
+    height:370px;
+}
 
-        .section-title{
-            font-size: rem($ntF - 5);
-        }
-        
+
+//Responsive from 1920px to 1200px
+@media(max-width:1600px){
+    #first-circumnavigation .section-title{
+        font-size: rem($ntF - 9);
+        width:500px;
+    }
+    #first-circumnavigation .text-wrapper{
+        height:370px;
+    }
+}
+@media (max-width:1400px){
+    #startup-title-one{
+        margin-bottom:0px;
+    }
+    #startup-title-two{
+        font-size:rem($ntF - 7);
+        letter-spacing: $bLetterSpasing;
+    }
+    .text-wrapper{
+        height:350px;
+    }
+    .section-title{
+        font-size: rem($ntF - 1);
+    }
+    .section-text{
+        font-size: rem($sF - 1);
+    }
+    .section-learn-more{
+        font-size: rem($stF - 1);
+    }
+    .img-wrapper{
+        transform: scale(0.9);
+    }
+    #sea-routh-india-section .text-wrapper{
+        height:420px;
+    }
+    #first-circumnavigation .section-title{
+        font-size: rem($ntF - 12);
+        width:500px;
+    }
+    #north-pole .text-wrapper{
+        height:350px;
+    }
+    #south-pole .text-wrapper{
+        height:370px;
+    }
 }
