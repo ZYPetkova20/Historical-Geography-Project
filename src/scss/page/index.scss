@@ -274,3 +274,20 @@ section{
         margin-bottom: 20px;
     }
 }
+
+//Responsive from 992px to 768px
+@media  only screen and (max-width:992px){
+    #startup-content{
+        width:100%;
+        height:67%;
+        @include flex(column, flex-end, center);
+    }
+    #startup-title-one{
+        font-size:rem($nF992px);
+        margin-bottom:10px;
+    }
+    #startup-title-two{
+        font-size:rem($ntF992px - 1.5);
+        line-height: 3rem;
+    }   
+}

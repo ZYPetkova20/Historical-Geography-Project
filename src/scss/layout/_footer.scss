@@ -291,3 +291,96 @@ input:focus{
         z-index: 1001;
     }
 }
+
+//Responsive from 992px to 768px
+@media  only screen and (max-width:992px){
+    footer{
+        height:230px;
+    }
+    #footer-title-wrapper{
+            h3{
+                font-size:rem($ntF992px - 15);
+                line-height: 0px;
+                letter-spacing: $nLetterSpasing;
+            }
+    }
+    #footer-mini-nav{
+        width:170px;
+            p{
+                font-size:rem($sF992px + 1);
+                line-height: 0px;
+                letter-spacing: $nLetterSpasing;
+            }
+    }
+    #footer-left-parth{
+            p{
+                font-size:rem($sF992px + 1);
+                line-height: 0px;
+                letter-spacing: $nLetterSpasing;
+            }
+    }
+
+    .popUp-content{
+        width:90%;
+        height:450px;
+    }
+    #first-form-parth{
+        @include flex(column, flex-start, center);
+        width:50%;
+    }
+    #first-form-parth-space{
+        @include flex(column, flex-start, flex-start);
+        width:77%;
+        height:100%;
+    }
+    #second-form-parth{
+        @include flex(column, flex-end, flex-start);
+        width:50%;
+    }
+    #form-title{
+        font-size: rem($ntF992px - 7);
+    }
+
+    form{
+            input:focus + .input-label{
+                transform: translate(-4px, -1em);
+                font-size:rem($nF992px - 17);
+            }
+    }
+    .input-and-label-wrapper{
+        height:130px;
+    }
+    input{
+        line-height: 27px;
+        height: 40px;
+        font-size: rem($nF992px - 10);
+            &:not(:placeholder-shown) + .input-label{
+                transform: translate(-4px, -1em);
+                font-size:  rem($nF992px - 17);
+                letter-spacing:  $nLetterSpasing;
+            }      
+    }
+    .input-label{
+        font-size: rem($nF992px - 10);
+        transform: translate(0px, 0em);
+    }
+    input:focus{
+        font-size: rem($nF992px - 10);
+    }
+    #submit-button{
+        font-size: rem($stF992px - 2);
+    }
+    #textarea{
+        font-size: rem($sF992px);
+    }
+    #messageLabel{
+        color:var(--inputLines);
+        font-size: rem($sF992px);
+        padding-left: 1.5rem;
+    }
+    ::placeholder{
+        color:var(--primaryTCWM);
+        font-size: rem($sF992px - 3);
+        letter-spacing: $nLetterSpasing + 0.2;
+    }
+}

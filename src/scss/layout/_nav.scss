@@ -96,6 +96,7 @@ input[type="checkbox"]:checked ~ .check:after{
     background-color: #9AA2A9;
 }
 
+//Responsive from 1920px to 1201px
 @media  only screen and (max-width:1400px){   
     #logo-wrapper{
         width:80px;
@@ -110,5 +111,18 @@ input[type="checkbox"]:checked ~ .check:after{
     }
     #white-dark-mode-button-wrapper{
         width:80px;
+    }
+}
+
+//Responsive from 1200px to 993px
+@media  only screen and (max-width:1200px){
+    nav{
+        display: none;
+    }
+    #logo-wrapper{
+        width:100px;
+    }
+    #white-dark-mode-button-wrapper{
+        width:120px;
     }
 }

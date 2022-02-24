@@ -5,7 +5,11 @@ $ntF:54;    //normal title font-size
 $nLetterSpasing: 0.07em; //normall letter spacing
 $bLetterSpasing: 0.2em;  //big letter spacing
 
-
 $navBorderColor:hsla(0, 3%, 62%, 0.2);
 $navHeight:80px;
 
+//Responsive from 992px to 768px
+$sF992px:20;     //small font-size
+$nF992px:30;     //normal font-size
+$stF992px:20;    //small title font-size
+$ntF992px:48;    //normal title font-size
