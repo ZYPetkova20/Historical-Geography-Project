@@ -96,7 +96,7 @@ input[type="checkbox"]:checked ~ .check:after{
     background-color: #9AA2A9;
 }
 
-@media (max-width:1400px){   
+@media  only screen and (max-width:1400px){   
     #logo-wrapper{
         width:80px;
     }

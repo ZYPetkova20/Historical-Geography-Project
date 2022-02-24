@@ -85,7 +85,9 @@ body{
     }
 }
 
-
+#main-responsive{
+    display: none;
+}
 main{
     width:100%;
     display: flex;
@@ -145,10 +147,13 @@ section{
 #north-pole .text-wrapper{
     height:370px;
 }
+#south-pole .text-wrapper{
+    height:390px;
+}
 
 
-//Responsive from 1920px to 1200px
-@media(max-width:1600px){
+//Responsive from 1920px to 1201px
+@media  only screen and  (max-width:1600px){
     #first-circumnavigation .section-title{
         font-size: rem($ntF - 9);
         width:500px;
@@ -156,8 +161,11 @@ section{
     #first-circumnavigation .text-wrapper{
         height:370px;
     }
+    #south-pole .text-wrapper{
+        height:370px;
+    }
 }
-@media (max-width:1400px){
+@media  only screen and (max-width:1400px){
     #startup-title-one{
         margin-bottom:0px;
     }
@@ -190,7 +198,79 @@ section{
     #north-pole .text-wrapper{
         height:350px;
     }
+    #south-pole .text-outer{
+        @include flex(row, flex-end , center);
+    }
     #south-pole .text-wrapper{
         height:370px;
+        width:450px;
+    }
+    #south-pole .section-title{
+        width:450px;
+    }
+    #south-pole .section-text{
+        width:450px;
+    }
+}
+
+//Responsive from 1200px to 993px
+@media  only screen and (max-width:1200px){
+    #america-section, #sea-routh-india-section, #first-circumnavigation, #north-pole, #south-pole{
+        display:none;
+    }
+
+    html{
+        scroll-snap-type: y proximity;
+    }
+
+    #main-responsive{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        background-image: url(../../dist/images/sectionBackground.png);
+    }
+    .responsive-section-wrapper{
+        @include flex(column, center,center); 
+        width:100%;
+        height:unset;
+        scroll-snap-align: center;
+    }
+    .responsive-image-wrapper{
+        @include flex(row, center, center);
+        width:100%;
+        height: unset;
+
+            img{
+                width:100%;
+                height: unset;
+            }
+    }
+    .responsive-text-wrapper{
+        @include flex(column, space-evenly,center);
+        width:100%;
+        height:unset;
+        text-align: center;
+    }
+    .responsive-section-title{
+        font-size: rem($ntF);
+        letter-spacing: $bLetterSpasing;
+        margin:0px;
+        text-align: center;
+        width:800px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .responsive-section-text{
+        font-size: rem($sF);
+        letter-spacing: $nLetterSpasing;
+        width:400px;
+        margin-top: 20px;
+        margin-bottom:20px;
+    }
+    .responsive-section-learn-more{
+        font-size: rem($stF);
+        letter-spacing: $bLetterSpasing;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
