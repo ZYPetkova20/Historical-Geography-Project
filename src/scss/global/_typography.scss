@@ -8,7 +8,7 @@ h6{
     color:var(--primaryTCWM);
 
 }
-a, p{
+a, p, label, input{
     font-family: 'sf_pro_displaythin';
     text-decoration: none;
     color:var(--primaryTCWM);
@@ -16,4 +16,7 @@ a, p{
 ::selection {
     color:var(--accentTCWM);
     background-color: var(--primaryCWM);
+}
+::placeholder{
+    color:var(--primaryTCWM);
 }

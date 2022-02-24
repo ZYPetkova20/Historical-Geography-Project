@@ -47,3 +47,218 @@ footer{
             letter-spacing: $nLetterSpasing;
         }
 }
+
+footer button{
+    visibility: hidden;
+
+        p{
+            visibility: visible;
+        }
+}
+.popUp-wrapper{
+    position: fixed;
+    top:0;
+    left:0;
+    @include flex(row,center,center);
+    width:100%;
+    height:100%;
+    z-index: 1000;
+    transform: translateY(-100%);
+    background-color: transparent;
+}
+.popUp-background{
+    position: fixed;
+    top:0;
+    left:0;
+    @include flex(row,center,center);
+    width:100%;
+    height:100%;
+    z-index: 500;
+    display:none;
+    background-color: hsla(0, 0%, 15%, 0.8);
+    opacity:0;
+}
+.backgroundAppear{
+    display:block;
+    animation-name: backgroundAppear;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+@keyframes backgroundAppear {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+.visiable{
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.4s;
+    animation-timing-function: cubic-bezier(0.65,.07,.07,1.3);
+}
+@keyframes appear{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+.notVisiable{
+    animation-name: disAppear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(1.7,.07,.07,0.65);
+}
+@keyframes disAppear {
+    0%{
+        transform: translateY(0%);
+    }
+    20%{
+        transform: translateY(10%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+.popUp-content{
+    position: relative;
+    @include flex(row, center,center);
+    width:1080px;
+    height:500px;
+    background-color: var(--primaryCWM);
+    z-index: 1001;
+}
+#close-popUp{
+    position: absolute;
+    top:-30px;
+    right:10px;
+    @include flex(row,center,center);
+    font-size:2.5rem;  
+    width:30px;
+    height:30px;
+    line-height:0rem;
+    transform: rotate(45deg);
+}
+form{
+    @include flex(row,center,flex-end);
+    width:100%;
+    height:100%;
+
+        input:focus + .input-label{
+            transform: translate(-10px, -1em);
+            font-size:rem($nF - 17);
+            letter-spacing: $nLetterSpasing;
+        }
+}
+#first-form-parth{
+    @include flex(column, flex-start, center);
+    width:40%;
+    height:87%;
+    border-right-style:solid;
+    border-right-width:2px;
+    border-right-color:var(--inputLines);
+}
+#first-form-parth-space{
+    @include flex(column, flex-start, flex-start);
+    width:77%;
+    height:100%;
+}
+#form-title-wrapper{
+    @include flex(row, flex-start, center);
+    width:100%;
+    height:40px;
+}
+#form-title{
+    font-size: rem($ntF - 7);
+    line-height:0;
+    letter-spacing: $nLetterSpasing + 0.2;
+}
+#hr-div-wrapper{
+    @include flex(row, flex-start, center);
+    width:100%;
+    height:60px;
+}
+#hr-div{
+    width:85px;
+    height:1px;
+    background-color: var(--accentTCWM);
+}
+.input-and-label-wrapper{
+    @include flex(row, null, null);
+    position: relative;
+    width:100%;
+    height:130px;
+}
+input{
+    border:none;
+    background-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-color: var(--inputLines);
+    border-bottom-width: 2px;
+    line-height: 27px;
+    width:100%;
+    height: 50px;
+    outline:none;
+    font-size: rem($nF - 10);
+    letter-spacing: $nLetterSpasing;
+    color:var(--primaryTCWM);
+
+        &:not(:placeholder-shown) + .input-label{
+            transform: translate(-10px, -1em);
+            font-size:  rem($nF - 17);
+            letter-spacing:  $nLetterSpasing;
+        }      
+}
+.input-label{
+    position: absolute;
+    left:0.5em;
+    z-index: 2;
+    font-size: rem($nF - 10);
+    letter-spacing: $nLetterSpasing;
+    color: var(--inputLines);
+    transition: 0.3s;
+    transform: translate(0px, 0em);
+}
+input:focus{
+    outline:none;
+    font-size: rem($nF - 10);
+    letter-spacing: $nLetterSpasing;
+    color:var(--primaryTCWM);
+}
+#second-form-parth{
+    @include flex(column, flex-end, flex-start);
+    width:60%;
+    height:87%;
+}
+#submit-button{
+    width:100%;
+    height:80px;
+    background-color: var(--accentTCWM);
+    color:white;
+    border:none;
+    font-family: 'TeX Gyre Adventor Bold';
+    font-size: rem($stF - 4);
+    letter-spacing: $bLetterSpasing;
+}
+#textarea{
+    width:100%;
+    height:100%;
+    border:none;
+    outline:none;
+    color:var(--primaryTCWM);
+    font-size: rem($sF);
+    background-color: transparent;
+    font-family: 'sf_pro_displaythin';
+    resize: none;
+    overflow: hidden;
+    padding-left: 1.5rem;
+}
+#messageLabel{
+    color:var(--inputLines);
+    font-size: rem($sF - 6);
+    padding-left: 1.5rem;
+}

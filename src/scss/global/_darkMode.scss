@@ -12,10 +12,12 @@
         --primaryCWM:#{$primaryCDM};
         --primaryTCWM:#{$primaryTCDM};
         --navBackgroundC:#{$navBackgroundCDM};
+       // --inputLines:#{$inputLinesDarkMode};
     }
 }
 .dark-mode{
     --primaryCWM:#{$primaryCDM};
     --primaryTCWM:#{$primaryTCDM};
     --navBackgroundC:#{$navBackgroundCDM};
+    //--inputLines:#{$inputLinesDarkMode};
 }

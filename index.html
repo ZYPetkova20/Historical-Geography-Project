@@ -15,6 +15,43 @@
     <!--Custom cursor-->
         <div class="cursor">
         </div>
+    <!--Pop up window-->
+        <div class="popUp-background"></div>
+        <div class="popUp-wrapper">  
+            <div class="popUp-content">
+                <p id="close-popUp">+</p>
+                <form action="" method="post">
+                    <div id="first-form-parth">
+                        <div id="first-form-parth-space">
+                            <div id="form-title-wrapper">
+                                <h4 id="form-title">Write us</h4>
+                            </div>
+                            <div id="hr-div-wrapper">
+                                <div id="hr-div"></div>
+                            </div>
+                            <div class="input-and-label-wrapper">
+                                <input type="text" id="name" name="name" placeholder="&nbsp;" required>
+                                <label for="name" class="input-label">Name</label>
+                            </div>
+                            <div class="input-and-label-wrapper">
+                                <input type="text" id="email" name="email" placeholder="&nbsp;" required>
+                                <label for="email" class="input-label">E-mail</label>
+                            </div>
+                            <div class="input-and-label-wrapper">
+                                <input type="text" id="phone-number" name="phone-number" placeholder="&nbsp;" required>
+                                <label for="phone-number" class="input-label">Phone</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="second-form-parth">
+                        <label for="feedback" id="messageLabel">Message</label>
+                        <textarea name="feedback" id="textarea"   placeholder="Write text here..." required >
+                        </textarea>
+                        <input type="submit" value="SEND MESSAGE" id="submit-button">
+                    </div>
+                </form>
+            </div>
+        </div>        
     <!--page content-->
     <div id="nav-wrapper">
         <a href="index.html">
@@ -158,7 +195,7 @@
                     <p>2022 © NEWT | All rights reserved</p>
                 </div>
                 <div id="footer-mini-nav">
-                    <a href=""><p>Feedback</p></a> 
+                    <p id="feedback-popUp">Feedback</p>   
                     <p>|</p> 
                     <a href=""><p>About</p></a>
                 </div>
@@ -167,5 +204,6 @@
     </footer>
     <script src="dist/js/cursor.js"></script>
     <script src="dist/js/dark-mode.js"></script>
+    <script src="dist/js/popUpWindow.js"></script>
 </body> 
 </html>

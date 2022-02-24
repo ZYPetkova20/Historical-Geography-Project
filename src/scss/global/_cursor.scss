@@ -14,7 +14,7 @@
     transition-timing-function: ease;
     transition-duration: 0.6s;
     transition-property: background;
-    z-index: 100;
+    z-index: 10000;
 }
 .hover-links{
     background-color: c.$cursorOutlineHoverLinks;
