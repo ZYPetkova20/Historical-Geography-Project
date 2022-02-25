@@ -384,3 +384,57 @@ input:focus{
         letter-spacing: $nLetterSpasing + 0.2;
     }
 }
+
+//Responsive from 767px to 576px
+@media  only screen and (max-width:767px){
+    footer{
+        height:200px;
+    }
+    #footer-content-wrapper{
+        height:120px;
+    }
+
+    #footer-title-wrapper{
+        h3{
+            font-size:rem($ntF992px - 20);
+            line-height: 0px;
+        }
+    }
+    #footer-mini-nav{
+        width:150px;
+            p{
+                font-size:rem($sF992px - 2);
+                line-height: 0px;
+                letter-spacing: $nLetterSpasing;
+            }
+    }
+    #footer-left-parth{
+            p{
+                font-size:rem($sF992px - 2);
+                line-height: 0px;
+                letter-spacing: $nLetterSpasing;
+            }
+    }
+
+    .popUp-content{
+        width:90%;
+        height:60%;
+    }
+    form{
+            input:focus + .input-label{
+                transform: translate(-4px, -1em);
+                font-size:rem($nF992px - 17);
+            }
+    }
+    #first-form-parth-space{
+        width:70%;
+    }
+    #form-title{
+        font-size: rem($ntF992px - 18);
+    }
+    ::placeholder{
+        color:var(--primaryTCWM);
+        font-size: rem($sF992px - 3);
+        letter-spacing: $nLetterSpasing + 0.1;
+    }
+}
