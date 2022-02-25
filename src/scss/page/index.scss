@@ -289,5 +289,21 @@ section{
     #startup-title-two{
         font-size:rem($ntF992px - 1.5);
         line-height: 3rem;
-    }   
+    }
+    .responsive-section-title{
+        font-size: rem($ntF992px - 5);
+        width:100%;
+    }
+    .responsive-section-text{
+        font-size: rem($sF992px - 1);
+        width:350px;
+        margin-top: 10px;
+        margin-bottom:10px;
+    }
+    .responsive-section-learn-more{
+        font-size: rem($stF992px);
+        letter-spacing: $bLetterSpasing;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
