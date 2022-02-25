@@ -126,3 +126,21 @@ input[type="checkbox"]:checked ~ .check:after{
         width:120px;
     }
 }
+
+//Responsive to 575px 
+@media  only screen and (max-width:575px){
+    #nav-wrapper{
+        @include flex(row, space-between, center);
+        height:$navHeight - 20;
+    }
+    #logo-wrapper{
+        width:80px;
+
+            img{
+                transform: scale(0.8);
+            }
+    }
+    #white-dark-mode-button-wrapper{
+        width:80px;
+    }
+}

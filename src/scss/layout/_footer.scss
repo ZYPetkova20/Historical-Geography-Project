@@ -438,3 +438,122 @@ input:focus{
         letter-spacing: $nLetterSpasing + 0.1;
     }
 }
+
+//Responsive to 575px 
+@media  only screen and (max-width:575px){
+    footer{
+        height:190px;
+    }
+    #footer-content-wrapper{
+        height:unset;
+    }
+    #footer-main-parth{
+        @include flex(column-reverse,center,center);
+    }
+    
+    #footer-title-wrapper{
+        @include flex(row, center, center);
+        h3{
+            font-size:rem($ntF575px );
+            line-height: 0px;
+        }
+    }
+    #footer-mini-nav{
+        width:160px;
+            p{
+                font-size:rem($sF575px + 4);
+                line-height: 0px;
+                letter-spacing: $nLetterSpasing;
+            }
+    }
+    #footer-left-parth{
+            p{
+                font-size:rem($sF575px + 4);
+                line-height: 0px;
+                letter-spacing: $nLetterSpasing;
+            }
+    }
+
+    .popUp-content{
+        width:400px;
+        height:270px;
+    }
+    form{
+            input:focus + .input-label{
+                transform: translate(-4px, -1em);
+                font-size:rem($nF575px - 10);
+            }
+    }
+    input{
+        line-height: 27px;
+        height: 40px;
+        font-size: rem($nF575px - 10);
+            &:not(:placeholder-shown) + .input-label{
+                transform: translate(-4px, -1em);
+                font-size:  rem($nF575px - 10);
+                letter-spacing:  $nLetterSpasing;
+            }      
+    }
+    input:focus{
+        font-size: rem($nF575px - 10);
+    }
+    #first-form-parth-space{
+        width:70%;
+    }
+    #form-title{
+        font-size: rem($ntF575px - 10);
+    }
+    ::placeholder{
+        color:var(--primaryTCWM);
+        font-size: rem($sF575px - 3);
+        letter-spacing: $nLetterSpasing + 0.1;
+    }
+}
+@media  only screen and (max-width:430px){
+    #hr-div-wrapper{
+        display: none;
+    }
+    .popUp-content{
+        width:100%;
+        height:400px;
+    }
+    form{
+        @include flex(column,center,center);
+        width:100%;
+        height:100%;
+    }
+    #first-form-parth{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:60%;
+    }
+    #first-form-parth-space{
+        @include flex(column, flex-start, flex-start);
+        width:77%;
+        height:100%;
+    }
+    #form-title-wrapper{
+        @include flex(row, flex-start, center);
+        height:50px;
+    }
+    #form-title{
+        font-size: rem($ntF575px - 4);
+    }
+    #second-form-parth{
+        @include flex(column, flex-end, flex-start);
+        width:77%;
+        height:40%;
+    }
+    .input-and-label-wrapper{
+        @include flex(row, null, null);
+        position: relative;
+        width:100%;
+        height:100%;
+    }
+    #textarea{
+        padding-left: 0rem;
+    }
+    #messageLabel{
+        padding-left: 0rem;
+    }
+}
