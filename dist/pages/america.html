@@ -10,6 +10,8 @@
     <!--For the custom fonts-->
         <link rel="stylesheet" type="text/css" href="../../src/fonts/style.css"/>
         <link rel="stylesheet" type="text/css" href="../../src/fonts/stylesheet2.css"/>
+    <!--AOS library-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!--Custom cursor-->
@@ -54,14 +56,19 @@
         </div>       
     <!--page content-->
     <img src="../images/americaPageFirstImage.png" alt="Image of America" id="first-image">
-    <div id="starter-text-wrapper">
+    <div id="starter-text-wrapper"
+    data-aos="fade"
+    data-aos-offset="300"
+    data-aos-duration="500">
         <h1 id="starter-title">AMERICA</h1>
         <p id="starter-text">
             12 October 1492 marks an event which was to change life on both sides of the Atlantic forever. This date represents the discovery of America by the Italian explorer and navigator Christopher Columbus. 
         </p>
     </div>
     <img src="../images/americaPageSecondImage.png" alt="Image of America" id="secondImage">
-    <div id="native-communities-text-wrapper">
+    <div id="native-communities-text-wrapper" data-aos="fade-left"
+    data-aos-offset="300"
+    data-aos-duration="500">
         <h1 id="native-communities-title">Native communities</h1>
         <p id="native-communities-text">
             However, as with much of early modern history, where one prospers, another must suffer, and life for the indigenous people of America drastically changed. Although the Spanish and native population appeared to cooperate in the early years of exploration, the colonization of America soon brought death and destruction to the communities living there. European diseases devastated native communities, who were incredibly vulnerable due to lack of exposure. 
@@ -69,13 +76,19 @@
         </p>
     </div>
     <div id="end-page-wrapper">
-        <div id="columbian-exchange-wrapper">
+        <div id="columbian-exchange-wrapper"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-duration="500">
             <h1 id="columbian-exchange-title">Columbian Exchange</h1>
             <p id="columbian-exchange-text">
                 However, as with much of early modern history, where one prospers, another must suffer, and life for the indigenous people of America drastically changed. Although the Spanish and native population appeared to cooperate in the early years of exploration, the colonization of America soon brought death and destruction to the communities living there. European diseases devastated native communities, who were incredibly vulnerable due to lack of exposure. 
             </p>
         </div>
-        <div id="consequences-text-wrapper">
+        <div id="consequences-text-wrapper"
+        data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-duration="500">
             <h1 id="consequences-title">Consequences </h1>
             <p id="consequences-text"> 
                 The importance of the discovery of America is clear, the consequences of Columbus’ voyage in 1492 were to change the world forever. Whilst the ramifications of the exploration and colonisation that followed are still debated today, no one can deny that the discovery drastically changed lives on both sides of the Atlantic, both positively and negatively, and these changes are still felt today.
@@ -102,5 +115,10 @@
     </div>
     <script src="../js/cursor.js"></script>
     <script src="../js/popUpWindow.js"></script>
+    <!--AOS library-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 </html>
