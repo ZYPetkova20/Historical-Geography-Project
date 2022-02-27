@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/newtLogo.png">
+    <link rel="stylesheet" href="../css/page/northPole.css">
+    <title>First circumnavigation</title>
+    <!--For the custom fonts-->
+        <link rel="stylesheet" type="text/css" href="../../src/fonts/style.css"/>
+        <link rel="stylesheet" type="text/css" href="../../src/fonts/stylesheet2.css"/>
+    <!--AOS library-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!--Custom cursor-->
+        <div class="cursor">
+        </div>
+    
+    <!--Pop up window-->
+        <div class="popUp-background"></div>
+        <div class="popUp-wrapper">
+            <div class="popUp-content">
+                <p id="close-popUp">+</p>
+                <form action="mailto:ZZSpasov20@codingburgas.bg?subject=New feedback" method="post">
+                    <div id="first-form-parth">
+                        <div id="first-form-parth-space">
+                            <div id="form-title-wrapper">
+                                <h4 id="form-title">Write us</h4>
+                            </div>
+                            <div id="hr-div-wrapper">
+                                <div id="hr-div"></div>
+                            </div>
+                            <div class="input-and-label-wrapper">
+                                <input type="text" id="name" name="name" placeholder="&nbsp;" required>
+                                <label for="name" class="input-label">Name</label>
+                            </div>
+                            <div class="input-and-label-wrapper">
+                                <input type="text" id="last name" name="last name" placeholder="&nbsp;" required>
+                                <label for="last name" class="input-label">Last name</label>
+                            </div>
+                            <div class="input-and-label-wrapper">
+                                <input type="text" id="phone-number" name="phone-number" placeholder="&nbsp;" required>
+                                <label for="phone-number" class="input-label">Phone</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="second-form-parth">
+                        <label for="feedback" id="messageLabel">Message</label>
+                        <textarea name="feedback" id="textarea"   placeholder="Write text here..." required >
+                        </textarea>
+                        <input type="submit" value="SEND MESSAGE" id="submit-button">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    <!--page content-->
+
+    <script src="../js/cursor.js"></script>
+    <script src="../js/popUpWindow.js"></script>
+
+    <!--AOS library-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+</body>
+</html>
