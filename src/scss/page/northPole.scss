@@ -5,3 +5,98 @@
 body{
     background-color: var(--primaryCWM);
 }
+
+#first-image{
+    width:100%;
+    height:auto;
+}
+
+#starter-text-wrapper{
+    @include flex(column, center, center);
+    width:100%;
+    height:600px;
+}
+#starter-title{
+    font-size:rem($ntF);
+    letter-spacing: $bLetterSpasing;
+}
+#starter-text{
+    width:800px;
+    font-size: rem($nF);
+    text-align: center;
+}
+
+#secondImage{
+    width:100%;
+    height:auto;
+}
+
+#the-begging-text-wrapper{
+    @include flex(column, flex-start, flex-end);
+    width:98%;
+    height:630px;
+}
+#the-begging-title{
+    font-size:rem($ntF);
+    letter-spacing: $bLetterSpasing;
+    width:500px;
+    text-align: right;
+}
+#the-begging-text{
+    width:1000px;
+    font-size: rem($nF);
+    text-align: right;
+}
+
+#end-page-wrapper{
+    @include flex(column, flex-end, center);
+    width:100%;
+    height:unset;
+    position: relative;
+}
+#end-background-image{
+    width: 100%;
+    height:auto;
+    position: absolute;
+    bottom:0;
+    left:0;
+    z-index: -2;
+}
+footer{
+    background-image: unset;
+    height:200px;
+}
+
+#ice-crush-wrapper{
+    @include flex(column, flex-start, flex-start);
+    width:96%;
+    height:450px;
+}
+#ice-crush-title{
+    font-size:rem($ntF);
+    letter-spacing: $bLetterSpasing;
+    width:550px;
+    text-align: left;
+}
+#ice-crush-text{
+    width:1000px;
+    font-size: rem($nF);
+    text-align: left;
+}
+
+#real-discoverer-text-wrapper{
+    @include flex(column, flex-start, flex-end);
+    width:96%;
+    height:700px;
+}
+#real-discoverer-title{
+    font-size:rem($ntF);
+    letter-spacing: $bLetterSpasing;
+    width:550px;
+    text-align: right;
+}
+#real-discoverer-text{
+    width:1000px;
+    font-size: rem($nF);
+    text-align: right;
+}
