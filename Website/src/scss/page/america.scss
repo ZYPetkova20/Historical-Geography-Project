@@ -6,44 +6,55 @@ body{
     background-color: var(--primaryCWM);
 }
 
+#starter-div{
+    @include flex(column, flex-start, center);
+    width:100%;
+    height:100%;
+}
 #first-image{
     width:100%;
     height:auto;
 }
-
-#starter-text-wrapper{
-    @include flex(column, center, center);
+#starter-heading-wrapper{
+    @include flex(row, center, center);
     width:100%;
-    height:600px;
+    height:100%;
 }
 #starter-title{
     font-size:rem($ntF);
     letter-spacing: $bLetterSpasing;
 }
+
+#starter-text-wrapper{
+    @include flex(column, center, center);
+    width:100%;
+    height: unset;
+    margin-bottom: 100px;
+}
 #starter-text{
     width:800px;
     font-size: rem($nF);
     text-align: center;
+    margin:0;
 }
-
 
 #secondImage{
     width:100%;
     height:auto;
 }
 
-#the-beggining-text-wrapper{
+#native-communities-text-wrapper{
     @include flex(column, flex-start, flex-end);
     width:98%;
-    height:650px;
+    height:600px;
 }
-#the-beggining-title{
+#native-communities-title{
     font-size:rem($ntF);
     letter-spacing: $bLetterSpasing;
     width:500px;
     text-align: right;
 }
-#the-beggining-text{
+#native-communities-text{
     width:1000px;
     font-size: rem($nF);
     text-align: right;
@@ -68,35 +79,35 @@ footer{
     height:200px;
 }
 
-#only-sailer-wrapper{
+#columbian-exchange-wrapper{
     @include flex(column, flex-start, flex-start);
     width:96%;
     height:600px;
 }
-#only-sailer-title{
+#columbian-exchange-title{
     font-size:rem($ntF);
     letter-spacing: $bLetterSpasing;
     width:550px;
     text-align: left;
 }
-#only-sailer-text{
+#columbian-exchange-text{
     width:1000px;
     font-size: rem($nF);
     text-align: left;
 }
 
-#return-to-portugal-text-wrapper{
+#consequences-text-wrapper{
     @include flex(column, flex-start, flex-end);
     width:96%;
-    height:650px;
+    height:550px;
 }
-#return-to-portugal-title{
+#consequences-title{
     font-size:rem($ntF);
     letter-spacing: $bLetterSpasing;
     width:550px;
     text-align: right;
 }
-#return-to-portugal-text{
+#consequences-text{
     width:1000px;
     font-size: rem($nF);
     text-align: right;

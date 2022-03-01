@@ -29,32 +29,32 @@ body{
     @include flex(column, center, center);
     width:100%;
     height: unset;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 #starter-text{
     width:800px;
     font-size: rem($nF);
     text-align: center;
     margin:0;
-}
+} 
 
 #secondImage{
     width:100%;
     height:auto;
 }
 
-#native-communities-text-wrapper{
+#the-beggining-text-wrapper{
     @include flex(column, flex-start, flex-end);
     width:98%;
-    height:600px;
+    height:650px;
 }
-#native-communities-title{
+#the-beggining-title{
     font-size:rem($ntF);
     letter-spacing: $bLetterSpasing;
     width:500px;
     text-align: right;
 }
-#native-communities-text{
+#the-beggining-text{
     width:1000px;
     font-size: rem($nF);
     text-align: right;
@@ -79,35 +79,35 @@ footer{
     height:200px;
 }
 
-#columbian-exchange-wrapper{
+#only-sailer-wrapper{
     @include flex(column, flex-start, flex-start);
     width:96%;
     height:600px;
 }
-#columbian-exchange-title{
+#only-sailer-title{
     font-size:rem($ntF);
     letter-spacing: $bLetterSpasing;
     width:550px;
     text-align: left;
 }
-#columbian-exchange-text{
+#only-sailer-text{
     width:1000px;
     font-size: rem($nF);
     text-align: left;
 }
 
-#consequences-text-wrapper{
+#return-to-portugal-text-wrapper{
     @include flex(column, flex-start, flex-end);
     width:96%;
-    height:550px;
+    height:650px;
 }
-#consequences-title{
+#return-to-portugal-title{
     font-size:rem($ntF);
     letter-spacing: $bLetterSpasing;
     width:550px;
     text-align: right;
 }
-#consequences-text{
+#return-to-portugal-text{
     width:1000px;
     font-size: rem($nF);
     text-align: right;
