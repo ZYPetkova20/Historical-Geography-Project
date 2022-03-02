@@ -63,14 +63,14 @@ input[type="checkbox"]{
     transition: ease-in 0.5s; 
 }
 input[type="checkbox"]:checked ~ .check{
-    background: #fff;
+    background: #E5E5E7;
 }
 .check:before{
     content:'';
     position: absolute;
     top:3px;
     left:3px;
-    background-color: #fff;
+    background-color: #E5E5E7;
     width:19px;
     height:19px;
     border-radius: 50%;

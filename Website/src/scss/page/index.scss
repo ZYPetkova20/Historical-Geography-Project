@@ -1,6 +1,7 @@
 @use '../util/_utilForward.scss' as *;
 @use '../global/_globalForward.scss' as *;
-@use '../layout/_layoutForward.scss' as *;
+@use '../layout/_footer.scss';
+@use '../layout/_nav.scss';
 
 html{
     scroll-snap-type: y mandatory;
@@ -14,6 +15,7 @@ body{
     height:100%;
     min-height:350px;
     scroll-snap-align:start;
+    background-color: var(--primaryNavCDM);
 }
 #startup-content{
     width:100%;

@@ -2,6 +2,7 @@
 
 .light-mode{
     --primaryCWM: #{$primaryCWM};
+    --primaryNavCDM:#{$primaryCWM};
     --primaryTCWM: #{$primaryTCWM};
     --accentTCWM: #{$accentTCWM};
     --navBackgroundC:#{$navBackgroundC};
@@ -10,6 +11,7 @@
 @media (prefers-color-scheme: dark){
     :root{
         --primaryCWM:#{$primaryCDM};
+        --primaryNavCDM:#4F4F4F;
         --primaryTCWM:#{$primaryTCDM};
         --navBackgroundC:#{$navBackgroundCDM};
        // --inputLines:#{$inputLinesDarkMode};
@@ -17,6 +19,7 @@
 }
 .dark-mode{
     --primaryCWM:#{$primaryCDM};
+    --primaryNavCDM:#4F4F4F;
     --primaryTCWM:#{$primaryTCDM};
     --navBackgroundC:#{$navBackgroundCDM};
     //--inputLines:#{$inputLinesDarkMode};
