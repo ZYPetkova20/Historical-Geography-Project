@@ -1,7 +1,4 @@
 let dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-let counter  =0;
-
 var element = document.body;
 var button = document.getElementById('dark-mode-button');
 
@@ -54,13 +51,11 @@ else if(document.body.classList.contains('secondary-page')){
     if(dark){
         element.classList.add("dark-mode");
         element.classList.remove("light-mode");
-        footerBackground.style.backgroundImage = "url(dist/images/footerBackgroundDarkMode.png)";
         button.checked = true;
     }
     else{
         element.classList.add("light-mode");
         element.classList.remove("dark-mode");
-        footerBackground.style.backgroundImage = "url(dist/images/footerBackground.png)";
         button.checked = false;
     }
     
@@ -69,12 +64,10 @@ else if(document.body.classList.contains('secondary-page')){
         if(button.checked == true){
             element.classList.add("dark-mode");
             element.classList.remove("light-mode");
-            footerBackground.style.backgroundImage = "url(dist/images/footerBackgroundDarkMode.png)";
         }
         else{
             element.classList.add("light-mode");
             element.classList.remove("dark-mode");
-            footerBackground.style.backgroundImage = "url(dist/images/footerBackground.png)";
         }
     }
 }

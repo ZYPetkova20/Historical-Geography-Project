@@ -95,7 +95,7 @@ main{
     width:100%;
     display: flex;
     flex-direction: column;
-    background-image: url(../../dist/images/sectionBackground.png);
+    background-image: url(../../images/sectionBackground.png);
 }
 section{
     @include flex(row,center,flex-end);
@@ -230,7 +230,7 @@ section{
         width:100%;
         display: flex;
         flex-direction: column;
-        background-image: url(../../dist/images/sectionBackground.png);
+        background-image: url(../../images/sectionBackground.png);
     }
     .responsive-section-wrapper{
         @include flex(column, center,center); 
