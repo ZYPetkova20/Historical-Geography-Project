@@ -2,7 +2,7 @@ $primaryCWM: #E5E5E7; //primary color in white mode
 $primaryTCWM:#000000; //primary text color in white mode
 $navBackgroundC:hsla(240, 4%, 90%,.7); //primary color for the nav background in white mode
 $inputLines:#848484;//the lines bellow the inputs in the form in white mode
-$miniNavBC:#C4C4C4;
+$miniNavWBC:hsla(0, 0%, 50%, .5);
 
 $primaryCDM: #525252; //primary color in dark mode
 $primaryNavCDM:#E5E5E7; //primary nav color in dark mode
@@ -22,4 +22,5 @@ $cursorOutlineHoverLinks:hsla(0, 0%, 58%, 0.9);//when the cursor is on link
     --navBackgroundC:#{$navBackgroundC};
     --inputLines:#{$inputLines};
     --primaryNavCDM:#{$primaryNavCDM};
+    --miniNavWBC:#{$miniNavWBC};
 }

@@ -6,6 +6,7 @@
     --primaryTCWM: #{$primaryTCWM};
     --accentTCWM: #{$accentTCWM};
     --navBackgroundC:#{$navBackgroundC};
+    --miniNavWBC:hsla(0, 0%, 70%, .5);
 }
 
 @media (prefers-color-scheme: dark){
@@ -14,7 +15,7 @@
         --primaryNavCDM:#4F4F4F;
         --primaryTCWM:#{$primaryTCDM};
         --navBackgroundC:#{$navBackgroundCDM};
-       // --inputLines:#{$inputLinesDarkMode};
+        --miniNavWBC:#{$miniNavWBC};
     }
 }
 .dark-mode{
@@ -22,5 +23,5 @@
     --primaryNavCDM:#4F4F4F;
     --primaryTCWM:#{$primaryTCDM};
     --navBackgroundC:#{$navBackgroundCDM};
-    //--inputLines:#{$inputLinesDarkMode};
+    --miniNavWBC:#{$miniNavWBC};
 }

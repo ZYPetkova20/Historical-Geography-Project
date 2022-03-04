@@ -8,7 +8,7 @@
     @include flex(column, space-evenly, center);
     width:100px;
     height:100px;
-    background-color: $miniNavBC;
+    background-color: var(--miniNavWBC);
     border-radius: 20px;
     z-index: 5000;
 }
