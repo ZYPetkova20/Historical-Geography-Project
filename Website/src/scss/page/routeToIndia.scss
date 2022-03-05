@@ -180,3 +180,89 @@ footer{
         height:170px;
     }
 }
+
+//Responsive from 1200px to 993px
+@media  only screen and (max-width:1200px){
+    #starter-div{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-heading-wrapper{
+        @include flex(row, center, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-title{
+        font-size:rem($ntF + 10);
+        letter-spacing: $bLetterSpasing;
+    }
+    
+    #starter-text-wrapper{
+        @include flex(column, center, center);
+        width:100%;
+        height: unset;
+        margin-bottom: 70px;
+        margin-top: 20px;
+        //to overwrite aos animation
+        animation: none;
+        transition: none;
+        opacity: 1;
+    }
+    #starter-text{
+        width:700px;
+        font-size: rem($nF - 4);
+        text-align: center;
+        margin:0;
+    }
+
+    #the-beggining-text-wrapper{
+        @include flex(column, flex-start, flex-end);
+        width:98%;
+        height:570px;
+    }
+    #the-beggining-title{
+        font-size:rem($ntF - 6);
+        width:500px;
+    }
+    #the-beggining-text{
+        font-size: rem($nF - 6);
+        text-align: right;
+        width:700px;
+    }
+
+    #only-sailer-wrapper{
+        @include flex(column, flex-start, flex-start);
+        width:96%;
+        height:530px;
+    }
+    #only-sailer-title{
+        font-size:rem($ntF - 6);
+        width:550px;
+    }
+    #only-sailer-text{
+        width:700px;
+        font-size: rem($nF - 6);
+    }
+    
+    #return-to-portugal-text-wrapper{
+        @include flex(column, flex-start, flex-end);
+        width:96%;
+        height:560px;
+    }
+    #return-to-portugal-title{
+        font-size:rem($ntF - 6);
+        width:800px;
+    }
+    #return-to-portugal-text{
+        width:700px;
+        font-size: rem($nF - 6);
+    }
+
+    footer{
+        background-image: unset;
+        height:170px;
+    }
+}
