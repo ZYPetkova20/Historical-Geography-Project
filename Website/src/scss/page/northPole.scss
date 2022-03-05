@@ -180,3 +180,89 @@ footer{
         height:170px;
     }
 }
+
+//Responsive from 1200px to 993px
+@media  only screen and (max-width:1200px){
+    #starter-div{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-heading-wrapper{
+        @include flex(row, center, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-title{
+        font-size:rem($ntF + 10);
+        letter-spacing: $bLetterSpasing;
+    }
+    
+    #starter-text-wrapper{
+        @include flex(column, center, center);
+        width:100%;
+        height: unset;
+        margin-bottom: 70px;
+        margin-top: 20px;
+        //to overwrite aos animation
+        animation: none;
+        transition: none;
+        opacity: 1;
+    }
+    #starter-text{
+        width:700px;
+        font-size: rem($nF - 4);
+        text-align: center;
+        margin:0;
+    }
+
+    #the-begging-text-wrapper{
+        @include flex(column, flex-start, flex-end);
+        width:98%;
+        height:490px;
+    }
+    #the-begging-title{
+        font-size:rem($ntF - 6);
+        width:800px;
+    }
+    #the-begging-text{
+        font-size: rem($nF - 6);
+        text-align: right;
+        width:700px;
+    }
+
+    #ice-crush-wrapper{
+        @include flex(column, flex-start, flex-start);
+        width:96%;
+        height:430px;
+    }
+    #ice-crush-title{
+        font-size:rem($ntF - 6);
+        width:550px;
+    }
+    #ice-crush-text{
+        width:700px;
+        font-size: rem($nF - 6);
+    }
+    
+    #real-discoverer-text-wrapper{
+        @include flex(column, flex-start, flex-end);
+        width:96%;
+        height:600px;
+    }
+    #real-discoverer-title{
+        font-size:rem($ntF - 6);
+        width:800px;
+    }
+    #real-discoverer-text{
+        width:700px;
+        font-size: rem($nF - 6);
+    }
+
+    footer{
+        background-image: unset;
+        height:170px;
+    }
+}
