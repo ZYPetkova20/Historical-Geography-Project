@@ -4,10 +4,10 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const sass = require('gulp-sass')(require('sass'));
 const terser = require('gulp-terser');
-const scssPath = 'Website/src/scss/**/*.scss';
-const cssPath = 'Website/dist/css/';
-const jsPath = 'Website/src/js/**/*.js';
-const jsMinifiedPath = 'Website/dist/js/';
+const scssPath = 'src/scss/**/*.scss';
+const cssPath = 'dist/css/';
+const jsPath = '/src/js/**/*.js';
+const jsMinifiedPath = 'dist/js/';
 
 function css(){
     return src(scssPath)

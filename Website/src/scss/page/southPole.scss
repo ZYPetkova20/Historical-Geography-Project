@@ -37,3 +37,78 @@ body{
     text-align: center;
     margin:0;
 } 
+
+#secondImage{
+    width:100%;
+    height:auto;
+}
+
+#the-discovery-text-wrapper{
+    @include flex(column, flex-start, flex-end);
+    width:98%;
+    height:560px;
+}
+#the-discovery-title{
+    font-size:rem($ntF);
+    letter-spacing: $bLetterSpasing;
+    width:500px;
+    text-align: right;
+}
+#the-discovery-text{
+    width:1000px;
+    font-size: rem($nF);
+    text-align: right;
+}
+
+#end-page-wrapper{
+    @include flex(column, flex-end, center);
+    width:100%;
+    height:unset;
+    position: relative;
+}
+#end-background-image{
+    width: 100%;
+    height:auto;
+    position: absolute;
+    bottom:0;
+    left:0;
+    z-index: -2;
+}
+footer{
+    background-image: unset;
+    height:200px;
+}
+
+#framhiem-base-wrapper{
+    @include flex(column, flex-start, flex-start);
+    width:96%;
+    height:600px;
+}
+#framhiem-base-title{
+    font-size:rem($ntF);
+    letter-spacing: $bLetterSpasing;
+    width:550px;
+    text-align: left;
+}
+#framhiem-base-text{
+    width:1000px;
+    font-size: rem($nF);
+    text-align: left;
+}
+
+#consequences-text-wrapper{
+    @include flex(column, flex-start, flex-end);
+    width:96%;
+    height:550px;
+}
+#consequences-title{
+    font-size:rem($ntF);
+    letter-spacing: $bLetterSpasing;
+    width:550px;
+    text-align: right;
+}
+#consequences-text{
+    width:1000px;
+    font-size: rem($nF);
+    text-align: right;
+}
