@@ -216,6 +216,7 @@ footer{
         text-align: center;
         margin:0;
     }
+
     #the-discovery-text-wrapper{
         @include flex(column, flex-start, flex-end);
         width:98%;
@@ -230,6 +231,7 @@ footer{
         text-align: right;
         width:700px;
     }
+
     #framhiem-base-wrapper{
         @include flex(column, flex-start, flex-start);
         width:96%;
@@ -257,8 +259,96 @@ footer{
         width:700px;
         font-size: rem($nF - 6);
     }
+
     footer{
         background-image: unset;
         height:170px;
+    }
+}
+
+//Responsive from 992px to 768px
+@media  only screen and (max-width:992px){
+    #starter-div{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-heading-wrapper{
+        @include flex(row, center, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-title{
+        font-size:rem($ntF992px + 10);
+        letter-spacing: $bLetterSpasing;
+    }
+    
+    #starter-text-wrapper{
+        @include flex(column, center, center);
+        width:100%;
+        height: unset;
+        margin-bottom: 50px;
+        //to overwrite aos animation
+        animation: none;
+        transition: none;
+        opacity: 1;
+    }
+    #starter-text{
+        width:500px;
+        font-size: rem($nF992px - 4);
+        text-align: center;
+        margin:0;
+    }
+
+    #the-discovery-text-wrapper{
+        @include flex(column, flex-start, flex-end);
+        width:98%;
+        height:470px;
+    }
+    #the-discovery-title{
+        font-size:rem($ntF992px - 4);
+        width:500px;
+    }
+    #the-discovery-text{
+        font-size: rem($nF992px - 4);
+        text-align: right;
+        width:600px;
+    }
+
+    #framhiem-base-wrapper{
+        @include flex(column, flex-start, flex-start);
+        width:96%;
+        height:420px;
+    }
+    #framhiem-base-title{
+        font-size:rem($ntF992px - 4);
+        width:700px;
+    }
+    #framhiem-base-text{
+        width:600px;
+        font-size: rem($nF992px - 4);
+    }
+    
+    #consequences-text-wrapper{
+        @include flex(column, flex-start, flex-end);
+        width:96%;
+        height:470px;
+    }
+    #consequences-title{
+        font-size:rem($ntF992px - 4);
+        width:550px;
+    }
+    #consequences-text{
+        width:600px;
+        font-size: rem($nF992px - 4);
+    }
+
+    footer{
+        background-image: unset;
+    }
+    #footer-content-wrapper{
+        height:130px;
     }
 }
