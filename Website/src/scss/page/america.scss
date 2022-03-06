@@ -409,7 +409,7 @@ footer{
     #columbian-exchange-wrapper{
         @include flex(column, flex-start,center);
         width:100%;
-        height:500px;
+        height:540px;
     }
     #columbian-exchange-title{
         font-size:rem($ntF992px - 6);
@@ -425,7 +425,7 @@ footer{
     #consequences-text-wrapper{
         @include flex(column, flex-start, center);
         width:100%;
-        height:440px;
+        height:460px;
     }
     #consequences-title{
         font-size:rem($ntF992px - 6);
@@ -440,8 +440,9 @@ footer{
 
     footer{
         background-image: unset;
+        height:130px;
     }
     #footer-content-wrapper{
-        height:130px;
+        height:110px;
     }
 }
