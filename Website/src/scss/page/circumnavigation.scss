@@ -354,3 +354,96 @@ footer{
         height:130px;
     }
 }
+
+//Responsive from 767px to 576px
+@media  only screen and (max-width:767px){
+    #starter-div{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-heading-wrapper{
+        @include flex(row, center, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-title{
+        font-size:rem($ntF992px );
+        letter-spacing: $bLetterSpasing;
+    }
+    
+    #starter-text-wrapper{
+        @include flex(column, center, center);
+        width:100%;
+        height: unset;
+        margin-bottom: 50px;
+        //to overwrite aos animation
+        animation: none;
+        transition: none;
+        opacity: 1;
+    }
+    #starter-text{
+        width:400px;
+        font-size: rem($nF992px - 6);
+        text-align: center;
+        margin:0;
+    }
+
+    #squadron-sailed-text-wrapper{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:500px;
+    }
+    #squadron-sailed-title{
+        font-size:rem($ntF992px - 6);
+        width:100%;
+        text-align: center;
+    }
+    #squadron-sailed-text{
+        font-size: rem($nF992px - 6);
+        text-align: center;
+        width:500px;
+    }
+
+    #in-progress-wrapper{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:570px;
+    }
+    #in-progress-title{
+        font-size:rem($ntF992px - 6);
+        width:100%;
+        text-align: center;
+    }
+    #in-progress-text{
+        width:500px;
+        font-size: rem($nF992px - 5);
+        text-align: center
+    }
+    
+    #drake-message-text-wrapper{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:510px;
+    }
+    #drake-message-title{
+        font-size:rem($ntF992px - 6);
+        width:100%;
+        text-align: center;
+    }
+    #drake-message-text{
+        width:500px;
+        font-size: rem($nF992px - 6);
+        text-align: center;
+    }
+
+    footer{
+        background-image: unset;
+        height:130px;
+    }
+    #footer-content-wrapper{
+        height:110px;
+    }
+}
