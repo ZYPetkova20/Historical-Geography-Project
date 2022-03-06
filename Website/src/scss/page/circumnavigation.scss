@@ -180,7 +180,7 @@ footer{
     }
 }
 
-
+//Responsive from 1200px to 993px
 @media  only screen and (max-width:1200px){
     #starter-div{
         @include flex(column, flex-start, center);
@@ -263,5 +263,94 @@ footer{
     footer{
         background-image: unset;
         height:170px;
+    }
+}
+
+//Responsive from 992px to 768px
+@media  only screen and (max-width:992px){
+    #starter-div{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-heading-wrapper{
+        @include flex(row, center, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-title{
+        font-size:rem($ntF992px + 7);
+        letter-spacing: $bLetterSpasing;
+        text-align: center
+    }
+    
+    #starter-text-wrapper{
+        @include flex(column, center, center);
+        width:100%;
+        height: unset;
+        margin-bottom: 50px;
+        //to overwrite aos animation
+        animation: none;
+        transition: none;
+        opacity: 1;
+    }
+    #starter-text{
+        width:500px;
+        font-size: rem($nF992px - 4);
+        text-align: center;
+        margin:0;
+    }
+
+    
+    #squadron-sailed-text-wrapper{
+        @include flex(column, flex-start, flex-end);
+        width:98%;
+        height:480px;
+    }
+    #squadron-sailed-title{
+        font-size:rem($ntF992px - 4);
+        width:600px;
+    }
+    #squadron-sailed-text{
+        font-size: rem($nF992px - 4);
+        text-align: right;
+        width:600px;
+    }
+
+    #in-progress-wrapper{
+        @include flex(column, flex-start, flex-start);
+        width:96%;
+        height:530px;
+    }
+    #in-progress-title{
+        font-size:rem($ntF992px - 4);
+        width:550px;
+    }
+    #in-progress-text{
+        width:600px;
+        font-size: rem($nF992px - 4);
+    }
+    
+    #drake-message-text-wrapper{
+        @include flex(column, flex-start, flex-end);
+        width:96%;
+        height:500px;
+    }
+    #drake-message-title{
+        font-size:rem($ntF992px - 4);
+        width:550px;
+    }
+    #drake-message-text{
+        width:600px;
+        font-size: rem($nF992px - 4);
+    }
+
+    footer{
+        background-image: unset;
+    }
+    #footer-content-wrapper{
+        height:130px;
     }
 }
