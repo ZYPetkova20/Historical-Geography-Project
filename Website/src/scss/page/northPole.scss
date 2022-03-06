@@ -266,3 +266,90 @@ footer{
         height:170px;
     }
 }
+
+//Responsive from 992px to 768px
+@media  only screen and (max-width:992px){
+    #starter-div{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-heading-wrapper{
+        @include flex(row, center, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-title{
+        font-size:rem($ntF992px + 10);
+        letter-spacing: $bLetterSpasing;
+    }
+    
+    #starter-text-wrapper{
+        @include flex(column, center, center);
+        width:100%;
+        height: unset;
+        margin-bottom: 50px;
+        //to overwrite aos animation
+        animation: none;
+        transition: none;
+        opacity: 1;
+    }
+    #starter-text{
+        width:500px;
+        font-size: rem($nF992px - 4);
+        text-align: center;
+        margin:0;
+    }
+
+    #the-begging-text-wrapper{
+        @include flex(column, flex-start, flex-end);
+        width:98%;
+        height:440px;
+    }
+    #the-begging-title{
+        font-size:rem($ntF992px - 4);
+        width:800px;
+    }
+    #the-begging-text{
+        font-size: rem($nF992px - 4);
+        text-align: right;
+        width:600px;
+    }
+
+    #ice-crush-wrapper{
+        @include flex(column, flex-start, flex-start);
+        width:96%;
+        height:390px;
+    }
+    #ice-crush-title{
+        font-size:rem($ntF992px - 4);
+        width:550px;
+    }
+    #ice-crush-text{
+        width:600px;
+        font-size: rem($nF992px - 4);
+    }
+    
+    #real-discoverer-text-wrapper{
+        @include flex(column, flex-start, flex-end);
+        width:96%;
+        height:530px;
+    }
+    #real-discoverer-title{
+        font-size:rem($ntF992px - 4);
+        width:800px;
+    }
+    #real-discoverer-text{
+        width:600px;
+        font-size: rem($nF992px - 4);
+    }
+
+    footer{
+        background-image: unset;
+    }
+    #footer-content-wrapper{
+        height:130px;
+    }
+}
