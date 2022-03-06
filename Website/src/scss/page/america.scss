@@ -352,3 +352,96 @@ footer{
         height:130px;
     }
 }
+
+//Responsive from 767px to 576px
+@media  only screen and (max-width:767px){
+    #starter-div{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-heading-wrapper{
+        @include flex(row, center, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-title{
+        font-size:rem($ntF992px + 7);
+        letter-spacing: $bLetterSpasing;
+    }
+    
+    #starter-text-wrapper{
+        @include flex(column, center, center);
+        width:100%;
+        height: unset;
+        margin-bottom: 50px;
+        //to overwrite aos animation
+        animation: none;
+        transition: none;
+        opacity: 1;
+    }
+    #starter-text{
+        width:400px;
+        font-size: rem($nF992px - 6);
+        text-align: center;
+        margin:0;
+    }
+
+    #native-communities-text-wrapper{ 
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:500px;
+    }
+    #native-communities-title{
+        font-size:rem($ntF992px - 6);
+        width:100%;
+        text-align: center;
+    }
+    #native-communities-text{
+        font-size: rem($nF992px - 6);
+        text-align: right;
+        width:500px;
+        text-align: center;
+    }
+
+    #columbian-exchange-wrapper{
+        @include flex(column, flex-start,center);
+        width:100%;
+        height:500px;
+    }
+    #columbian-exchange-title{
+        font-size:rem($ntF992px - 6);
+        width:100%;
+        text-align:center;
+    }
+    #columbian-exchange-text{
+        width:500px;
+        font-size: rem($nF992px - 6);
+        text-align: center;
+    }
+    
+    #consequences-text-wrapper{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:440px;
+    }
+    #consequences-title{
+        font-size:rem($ntF992px - 6);
+        width:100%;
+        text-align: center;
+    }
+    #consequences-text{
+        width:500px;
+        font-size: rem($nF992px - 6);
+        text-align: center;
+    }
+
+    footer{
+        background-image: unset;
+    }
+    #footer-content-wrapper{
+        height:130px;
+    }
+}
