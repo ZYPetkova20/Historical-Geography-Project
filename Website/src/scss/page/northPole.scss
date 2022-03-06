@@ -353,3 +353,96 @@ footer{
         height:130px;
     }
 }
+
+//Responsive from 767px to 576px
+@media  only screen and (max-width:767px){
+    #starter-div{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-heading-wrapper{
+        @include flex(row, center, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-title{
+        font-size:rem($ntF992px + 5);
+        letter-spacing: $bLetterSpasing;
+    }
+    
+    #starter-text-wrapper{
+        @include flex(column, center, center);
+        width:100%;
+        height: unset;
+        margin-bottom: 50px;
+        //to overwrite aos animation
+        animation: none;
+        transition: none;
+        opacity: 1;
+    }
+    #starter-text{
+        width:400px;
+        font-size: rem($nF992px - 6);
+        text-align: center;
+        margin:0;
+    }
+
+    #the-begging-text-wrapper{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:440px;
+    }
+    #the-begging-title{
+        font-size:rem($ntF992px - 6);
+        width:100%;
+        text-align: center;
+    }
+    #the-begging-text{
+        font-size: rem($nF992px - 6);
+        text-align: center;
+        width:500px;
+    }
+
+    #ice-crush-wrapper{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:380px;
+    }
+    #ice-crush-title{
+        font-size:rem($ntF992px - 6);
+        width:100%;
+        text-align: center;
+    }
+    #ice-crush-text{
+        width:500px;
+        text-align: center;
+        font-size: rem($nF992px - 6);
+    }
+    
+    #real-discoverer-text-wrapper{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:530px;
+    }
+    #real-discoverer-title{
+        font-size:rem($ntF992px - 6);
+        width:100%;
+        text-align: center;
+    }
+    #real-discoverer-text{
+        width:500px;
+        text-align: center;
+        font-size: rem($nF992px - 6);
+    }
+
+    footer{
+        background-image: unset;
+        height:130px;
+    }
+    #footer-content-wrapper{
+        height:110px;
+    }
+}
