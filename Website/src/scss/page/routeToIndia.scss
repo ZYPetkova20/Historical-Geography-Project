@@ -446,3 +446,122 @@ footer{
         height:110px;
     }
 }
+
+//Responsive below 576px
+@media  only screen and (max-width:576px){
+
+    html{
+        overflow-x: hidden;
+    }
+    #starter-div{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-heading-wrapper{
+        @include flex(row, center, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-title{
+        font-size:rem($ntF575px + 10);
+        letter-spacing: $bLetterSpasing;
+        text-align: center
+    }
+    
+    #starter-text-wrapper{
+        @include flex(column, center, center);
+        width:100%;
+        height: unset;
+        margin-bottom: 50px;
+        //to overwrite aos animation
+        animation: none;
+        transition: none;
+        opacity: 1;
+    }
+    #starter-text{
+        width:70%;
+        font-size: rem($nF575px - 1);
+        text-align: center;
+        margin:0;
+    }
+
+    #the-beggining-text-wrapper{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:unset;
+        margin-top:40px;
+        margin-bottom:40px;
+        //to overwrite aos animation
+        animation: none;
+        transition: none;
+        opacity: 1;
+        transform: translate(0px);
+    }
+    #the-beggining-title{
+        font-size:rem($ntF575px);
+        width:100%;
+        text-align: center;
+    }
+    #the-beggining-text{
+        font-size: rem($nF575px - 3);
+        text-align: center;
+        width:80%;
+    }
+
+    #only-sailer-wrapper{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:unset;
+        margin-top:40px;
+        margin-bottom:40px;
+        //to overwrite aos animation
+        animation: none;
+        transition: none;
+        opacity: 1;
+        transform: translate(0px);
+    }
+    #only-sailer-title{
+        font-size:rem($ntF575px);
+        width:100;
+        text-align: center;
+    }
+    #only-sailer-text{
+        width:80%;
+        font-size: rem($nF575px - 3);
+        text-align: center;
+    }
+    
+    #return-to-portugal-text-wrapper{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:unset;
+        margin-top:40px;
+        margin-bottom:40px;
+        //to overwrite aos animation
+        animation: none;
+        transition: none;
+        opacity: 1;
+        transform: translate(0px);
+    }
+    #return-to-portugal-title{
+        font-size:rem($ntF575px );
+        width:100%;
+        text-align: center;
+    }
+    #return-to-portugal-text{
+        width:80%;
+        font-size: rem($nF575px - 3);
+        text-align: center;
+    }
+
+    footer{
+        background-image: unset;
+        height:unset;
+    }
+    #footer-content-wrapper{
+        height:unset;
+    }
+}
