@@ -447,3 +447,133 @@ footer{
         height:110px;
     }
 }
+
+//Responsive below 576px
+@media  only screen and (max-width:576px){
+
+    html{
+        overflow-x: hidden;
+    }
+    #starter-div{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-heading-wrapper{
+        @include flex(row, center, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-title{
+        font-size:rem($ntF575px + 7);
+        letter-spacing: $bLetterSpasing;
+    }
+    
+    #starter-text-wrapper{
+        @include flex(column, center, center);
+        width:100%;
+        height: unset;
+        margin-bottom: 50px;
+        //to overwrite aos animation
+        animation: none;
+        transition: none;
+        opacity: 1;
+    }
+    #starter-text{
+        width:70%;
+        font-size: rem($nF575px - 1);
+        text-align: center;
+        margin:0;
+    }
+
+    #squadron-sailed-text-wrapper{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:unset;
+        margin-top:40px;
+        margin-bottom:40px;
+        //to overwrite aos animation
+        animation: none;
+        transition: none;
+        opacity: 1;
+        transform: translate(0px);
+    }
+    #squadron-sailed-title{
+        font-size:rem($ntF575px);
+        width:100%;
+        text-align: center;
+    }
+    #squadron-sailed-text{
+        font-size: rem($nF575px  - 3);
+        text-align: center;
+        width:80%;
+    }
+
+    #in-progress-wrapper{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:unset;
+        margin-top:40px;
+        margin-bottom:40px;
+        //to overwrite aos animation
+        animation: none;
+        transition: none;
+        opacity: 1;
+        transform: translate(0px);
+    }
+    #in-progress-title{
+        font-size:rem($ntF575px);
+        width:100%;
+        text-align: center;
+    }
+    #in-progress-text{
+        width:80%;
+        font-size: rem($nF575px - 3);
+        text-align: center
+    }
+    
+    #drake-message-text-wrapper{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:unset;
+        margin-top:40px;
+        margin-bottom:40px;
+        //to overwrite aos animation
+        animation: none;
+        transition: none;
+        opacity: 1;
+        transform: translate(0px);
+    }
+    #drake-message-title{
+        font-size:rem($ntF575px);
+        width:100%;
+        text-align: center;
+    }
+    #drake-message-text{
+        width:80%;
+        font-size: rem($nF575px - 3);
+        text-align: center;
+    }
+ 
+    footer{
+        background-image: unset;
+        height:unset;
+    }
+    #footer-content-wrapper{
+        height:unset;
+    }
+}
+@media  only screen and (max-width:450px){
+    #starter-title{
+        font-size:rem($ntF575px + 1);
+        letter-spacing: $bLetterSpasing;
+    }
+}
+@media  only screen and (max-width:370px){
+    #starter-title{
+        font-size:rem($ntF575px - 3);
+        letter-spacing: $bLetterSpasing;
+    }
+}
