@@ -20,3 +20,8 @@
     background-color: c.$cursorOutlineHoverLinks;
     z-index: 100;
 }
+@media  only screen and (max-width:1200px){
+    .cursor{
+        display: none;
+    }
+}
