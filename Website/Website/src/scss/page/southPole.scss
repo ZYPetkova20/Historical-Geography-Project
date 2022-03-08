@@ -445,3 +445,122 @@ footer{
         height:110px;
     }
 }
+
+//Responsive below 576px
+@media  only screen and (max-width:576px){
+
+    html{
+        overflow-x: hidden;
+    }
+    #starter-div{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-heading-wrapper{
+        @include flex(row, center, center);
+        width:100%;
+        height:unset;
+        min-height: unset;
+    }
+    #starter-title{
+        font-size:rem($ntF575px + 7);
+        text-align: center;
+        letter-spacing: $bLetterSpasing;
+    }
+    
+    #starter-text-wrapper{
+        @include flex(column, center, center);
+        width:100%;
+        height: unset;
+        margin-bottom: 50px;
+        //to overwrite aos animation
+        animation: none;
+        transition: none;
+        opacity: 1;
+    }
+    #starter-text{
+        width:70%;
+        font-size: rem($nF575px - 1);
+        text-align: center;
+        margin:0;
+    }
+
+    #the-discovery-text-wrapper{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:unset;
+        margin-top:40px;
+        margin-bottom:40px;
+        //to overwrite aos animation
+        animation: none;
+        transition: none;
+        opacity: 1;
+        transform: translate(0px);
+    }
+    #the-discovery-title{
+        font-size:rem($ntF575px);
+        width:100%;
+        text-align: center;
+    }
+    #the-discovery-text{
+        font-size: rem($nF575px - 3);
+        text-align: center;
+        width:80%;
+    }
+
+    #framhiem-base-wrapper{
+        @include flex(column, flex-start, center);
+        width:100%;
+        height:unset;
+        margin-top:40px;
+        margin-bottom:40px;
+        //to overwrite aos animation
+        animation: none;
+        transition: none;
+        opacity: 1;
+        transform: translate(0px);
+    }
+    #framhiem-base-title{
+        font-size:rem($ntF575px);
+        width:100%;
+        text-align: center;
+    }
+    #framhiem-base-text{
+        width:80%;
+        text-align: center;
+        font-size: rem($nF575px - 3);
+    }
+    
+    #consequences-text-wrapper{
+        @include flex(column, flex-start,center);
+        width:96%;
+        height:unset;
+        margin-top:40px;
+        margin-bottom:40px;
+        //to overwrite aos animation
+        animation: none;
+        transition: none;
+        opacity: 1;
+        transform: translate(0px);
+    }
+    #consequences-title{
+        font-size:rem($ntF575px);
+        width:100%;
+        text-align: center;
+    }
+    #consequences-text{
+        width:80%;
+        font-size: rem($nF575px - 3);
+        text-align: center;
+    }
+
+    footer{
+        background-image: unset;
+        height:unset;
+    }
+    #footer-content-wrapper{
+        height:unset;
+    }
+}
