@@ -6,7 +6,7 @@ const sass = require('gulp-sass')(require('sass'));
 const terser = require('gulp-terser');
 const scssPath = 'src/scss/**/*.scss';
 const cssPath = 'dist/css/';
-const jsPath = '/src/js/**/*.js';
+const jsPath = 'src/js/**/*.js';
 const jsMinifiedPath = 'dist/js/';
 
 function css(){

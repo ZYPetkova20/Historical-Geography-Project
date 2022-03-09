@@ -23,3 +23,27 @@
     height:25px;
     border-radius: 20px;
 }
+
+//Responsive from 1200px to 993px
+@media  only screen and (max-width:1200px){
+    #miniNavWrapper{
+        left:2rem;
+        bottom:2rem;
+    }
+}
+
+//Responsive from 767px to 576px
+@media  only screen and (max-width:767px){
+    #miniNavWrapper{
+        left:1.5rem;
+        bottom:1.5rem;
+    }
+}
+
+//Responsive below 576px
+@media  only screen and (max-width:576px){
+    #miniNavWrapper{
+        left:1rem;
+        bottom:1rem;
+    }
+}
