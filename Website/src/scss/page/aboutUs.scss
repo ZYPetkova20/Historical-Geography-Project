@@ -5,3 +5,45 @@
 body{
     background-color: var(--primaryCWM);
 }
+
+#first-div-wrapper{
+    width:100%;
+    height:unset;
+    @include flex(row, space-evenly, center);
+    margin-bottom:100px;
+}
+#first-text-div-wrapper{
+    width:unset;
+    height:unset;
+    @include flex(column, center, flex-start);
+}
+.about-us-text{
+    font-size: rem($sF);
+    margin:0;
+}
+.team-newt{
+    font-size: rem($ntF);
+    margin:0;
+    letter-spacing: $bLetterSpasing;
+    margin-bottom: 2rem;
+}
+.main-text{
+    font-size: rem($nF - 7);
+    margin:0;
+    width:600px;  
+}
+.second{
+    text-align:right;
+}
+
+#second-div-wrapper{
+    width:100%;
+    height:unset;
+    @include flex(row, space-evenly, center);
+    margin-bottom:100px;
+}
+#second-text-div{
+    width:unset;
+    height:unset;
+    @include flex(column, center, flex-end);
+}

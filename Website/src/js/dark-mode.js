@@ -6,6 +6,7 @@ var button = document.getElementById('dark-mode-button');
 let logoImage = document.getElementById('logoImage');
 let indexMainBackground = document.getElementById('index-main');
 let scrollDownIcon = document.getElementById('scroll-down');
+let logoImageAbotUsPage = document.getElementById('newt-logo-about-us');
 let footerBackground = document.querySelector('footer');
 
 if(document.body.classList.contains('main-page')){
@@ -47,7 +48,6 @@ if(document.body.classList.contains('main-page')){
     
 }
 else if(document.body.classList.contains('secondary-page')){
-    //change images in the main page
     if(dark){
         element.classList.add("dark-mode");
         element.classList.remove("light-mode");
@@ -68,6 +68,38 @@ else if(document.body.classList.contains('secondary-page')){
         else{
             element.classList.add("light-mode");
             element.classList.remove("dark-mode");
+        }
+    }
+}
+else if(document.body.classList.contains('about-us-page')){
+    if(dark){
+        element.classList.add("dark-mode");
+        element.classList.remove("light-mode");
+        button.checked = true;
+        footerBackground.style.backgroundImage = "url(../images/footerBackgroundDarkMode.png)";
+        logoImageAbotUsPage.src = "../images/newtLogoInAboutUsPageWhite.png";
+    }
+    else{
+        element.classList.add("light-mode");
+        element.classList.remove("dark-mode");
+        button.checked = false;
+        footerBackground.style.backgroundImage = "url(../images/footerBackground.png)";
+        logoImageAbotUsPage.src = "../images/newtLogoInAboutUsPage.png";
+    }
+    
+    //to change the white or te dark mode
+    function darkMode(){
+        if(button.checked == true){
+            element.classList.add("dark-mode");
+            element.classList.remove("light-mode");
+            footerBackground.style.backgroundImage = "url(../images/footerBackgroundDarkMode.png)";
+            logoImageAbotUsPage.src = "../images/newtLogoInAboutUsPageWhite.png";
+        }
+        else{
+            element.classList.add("light-mode");
+            element.classList.remove("dark-mode");
+            footerBackground.style.backgroundImage = "url(../images/footerBackground.png)";
+            logoImageAbotUsPage.src = "../images/newtLogoInAboutUsPage.png";
         }
     }
 }
