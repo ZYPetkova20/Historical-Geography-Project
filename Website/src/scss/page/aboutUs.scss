@@ -37,13 +37,127 @@ body{
 }
 
 #second-div-wrapper{
+    @include flex(row, space-evenly, center);
     width:100%;
     height:unset;
-    @include flex(row, space-evenly, center);
     margin-bottom:100px;
 }
 #second-text-div{
     width:unset;
     height:unset;
     @include flex(column, center, flex-end);
+}
+//Responsive from 1920px to 1201px
+@media  only screen and (max-width:1400px){
+    img:nth-child(2){
+        transform: scale(0.8);
+    }
+    img:nth-child(1){
+        width:500px;
+    }
+}
+
+//Responsive from 1200px to 993px
+@media  only screen and (max-width:1200px){
+    #first-div-wrapper{
+        margin-bottom:70px;
+    }
+    #second-div-wrapper{
+
+        margin-bottom:70px;
+    }
+    img:nth-child(2){
+        transform: scale(0.7);
+    }
+    img:nth-child(1){
+        width:400px;
+    }
+    .about-us-text{
+        font-size: rem($sF);
+        margin:0;
+    }
+    .team-newt{
+        font-size: rem($ntF - 5);
+        margin-bottom: 1.7rem;
+    }
+    .main-text{
+        font-size: rem($nF - 9);
+        width:450px;  
+    }
+}
+
+//Responsive from 992px to 768px
+@media  only screen and (max-width:992px){
+    #first-div-wrapper{
+        @include flex(column-reverse, space-between, center);
+        height: 950px;
+        margin-bottom:120px;
+    }
+    #second-div-wrapper{
+        @include flex(column, space-between, center);
+        height: 830px;
+        margin-bottom:120px;
+    }
+    #first-text-div-wrapper{
+        @include flex(column, center,center);
+        margin-top: -60px;
+    }
+    #second-text-div{
+        @include flex(column, center, center);
+    }
+    .about-us-text{
+        display: none;
+    }
+    .team-newt{
+        font-size: rem($ntF - 5);
+        margin-bottom: 1.7rem;
+        text-align: center;
+    }
+    .main-text{
+        font-size: rem($nF - 9);
+        width:450px;
+        text-align: center;
+    }
+    .second{
+        text-align: center;
+    }
+}
+
+//Responsive below 576px
+@media  only screen and (max-width:576px){
+    #first-div-wrapper{
+        @include flex(column-reverse, space-between, center);
+        height: unset;
+        margin-bottom:80px;
+    }
+    #first-text-div-wrapper{
+        margin-top:  0px;
+    }
+    #second-div-wrapper{
+        @include flex(column, space-between, center);
+        height: unset;
+        margin-bottom:80px;
+    }
+    .team-newt{
+        font-size: rem($ntF - 10);
+        margin-bottom: 1.7rem;
+        text-align: center;
+    }
+    .main-text{
+        font-size: rem($nF - 14);
+        width:80%;
+        text-align: center;
+    }
+    img:nth-child(1){
+        transform: scale(0.9);
+    }
+    img:nth-child(2){
+        margin-top:-80px;
+        margin-bottom:-60px;
+    }
+}
+@media  only screen and (max-width:382px){
+    img:nth-child(1){
+        transform: scale(0.7);
+    }
 }
