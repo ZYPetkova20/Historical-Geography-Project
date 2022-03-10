@@ -12,6 +12,7 @@
         <link rel="stylesheet" type="text/css" href="../../src/fonts/stylesheet2.css"/>
     <!--AOS library-->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
 </head>
 <body class="secondary-page">
     <!--Custom cursor-->
@@ -79,6 +80,15 @@
             </div>
         </div>
 
+    <!--Sphere pop up-->
+    <div id="sphere-pop-up-background">
+        <div id="sphere-pop-up-wrapper">
+            <p id="close-popUp"  onclick="closePopUp()">+</p>
+            <h4 id="sphere-pop-up-title">See Routh</h4>
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+
     <!--page content-->
     <div id="starter-div">
         <img src="../images/americaPageFirstImage.png" alt="Image of America" id="first-image">
@@ -93,6 +103,7 @@
         <p id="starter-text">
             12 October 1492 marks an event which was to change life on both sides of the Atlantic forever. This date represents the discovery of America by the Italian explorer and navigator Christopher Columbus. 
         </p>
+        <h5 id="see-routh" onclick="popUp()">See Routh</h5>
     </div>
     <img src="../images/americaPageSecondImage.png" alt="Image of America" id="secondImage">
     <div id="native-communities-text-wrapper" data-aos="fade-left"
@@ -146,6 +157,7 @@
     <script src="../js/cursor.js"></script>
     <script src="../js/dark-mode.js"></script>
     <script src="../js/popUpWindow.js"></script>
+    <script src="../js/sphere.js"></script>
 
     <!--AOS library-->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

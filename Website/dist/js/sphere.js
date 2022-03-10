@@ -1,0 +1,1 @@
+let popUpDiv=document.getElementById("sphere-pop-up-background");function popUp(){popUpDiv.style.display="flex",popUpDiv.classList.add("backgroundAppear")}function closePopUp(){popUpDiv.style.display="none",popUpbackground.classList.remove("backgroundAppear")}

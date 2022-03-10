@@ -37,6 +37,13 @@ body{
     text-align: center;
     margin:0;
 }
+#see-routh{
+    line-height: 4rem;
+    font-size: rem($nF - 10);
+    text-align: center;
+    margin:0;
+    letter-spacing: $bLetterSpasing;
+}
 
 #secondImage{
     width:100%;
