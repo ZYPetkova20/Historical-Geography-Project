@@ -1,15 +1,8 @@
 @use '../util/_colors.scss' as *;
 
-.light-mode{
-    --primaryCWM: #{$primaryCWM};
-    --primaryNavCDM:#{$primaryCWM};
-    --primaryTCWM: #{$primaryTCWM};
-    --accentTCWM: #{$accentTCWM};
-    --navBackgroundC:#{$navBackgroundC};
-    --miniNavWBC:hsla(0, 0%, 70%, .5);
-}
 
-@media (prefers-color-scheme: dark){
+
+/*@media (prefers-color-scheme: dark){
     :root{
         --primaryCWM:#{$primaryCDM};
         --primaryNavCDM:#4F4F4F;
@@ -17,6 +10,14 @@
         --navBackgroundC:#{$navBackgroundCDM};
         --miniNavWBC:#{$miniNavWBC};
     }
+}*/
+.light-mode{
+    --primaryCWM: #{$primaryCWM};
+    --primaryNavCDM:#{$primaryCWM};
+    --primaryTCWM: #{$primaryTCWM};
+    --accentTCWM: #{$accentTCWM};
+    --navBackgroundC:#{$navBackgroundC};
+    --miniNavWBC:hsla(0, 0%, 70%, .5);
 }
 .dark-mode{
     --primaryCWM:#{$primaryCDM};

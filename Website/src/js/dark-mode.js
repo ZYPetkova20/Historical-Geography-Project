@@ -1,6 +1,6 @@
-let dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-var element = document.body;
-var button = document.getElementById('dark-mode-button');
+const darkModeToggle = document.getElementById('dark-mode-button');
+const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+let colorMode = localStorage.getItem('colorMode');
 
 //images than will be change depending on the mode
 let logoImage = document.getElementById('logoImage');
@@ -9,97 +9,59 @@ let scrollDownIcon = document.getElementById('scroll-down');
 let logoImageAbotUsPage = document.getElementById('newt-logo-about-us');
 let footerBackground = document.querySelector('footer');
 
-if(document.body.classList.contains('main-page')){
-    //change images in the main page
-    if(dark){
-        element.classList.add("dark-mode");
-        element.classList.remove("light-mode");
-        logoImage.src = "dist/images/newtLogoInWhite.png";
-        indexMainBackground.style.backgroundImage = "url(dist/images/sectionBackgroundWhite.png)";
-        footerBackground.style.backgroundImage = "url(dist/images/footerBackgroundDarkMode.png)";
-        button.checked = true;
-    }
-    else{
-        element.classList.add("light-mode");
-        element.classList.remove("dark-mode");
+const lightMode = () =>{
+    document.body.classList.remove("dark-mode");
+    document.body.classList.add("light-mode");
+    localStorage.setItem("colorMode", 'disable');
+    darkModeToggle.checked = false;
+
+    if(document.body.classList.contains('main-page')){
         logoImage.src = "dist/images/newtLogo.png";
         indexMainBackground.style.backgroundImage = "url(dist/images/sectionBackground.png)";
         footerBackground.style.backgroundImage = "url(dist/images/footerBackground.png)";
-        button.checked = false;
     }
-    
-    function darkMode(){
-        if(button.checked == true){
-            element.classList.add("dark-mode");
-            element.classList.remove("light-mode");
-            logoImage.src = "dist/images/newtLogoInWhite.png";
-            indexMainBackground.style.backgroundImage = "url(dist/images/sectionBackgroundWhite.png)";
-            footerBackground.style.backgroundImage = "url(dist/images/footerBackgroundDarkMode.png)";
-            
-        }
-        else{
-            element.classList.add("light-mode");
-            element.classList.remove("dark-mode");
-            logoImage.src = "dist/images/newtLogo.png";
-            indexMainBackground.style.backgroundImage = "url(dist/images/sectionBackground.png)";
-            footerBackground.style.backgroundImage = "url(dist/images/footerBackground.png)";
-        }
-    }
-    
-}
-else if(document.body.classList.contains('secondary-page')){
-    if(dark){
-        element.classList.add("dark-mode");
-        element.classList.remove("light-mode");
-        button.checked = true;
-    }
-    else{
-        element.classList.add("light-mode");
-        element.classList.remove("dark-mode");
-        button.checked = false;
-    }
-    
-    //to change the white or te dark mode
-    function darkMode(){
-        if(button.checked == true){
-            element.classList.add("dark-mode");
-            element.classList.remove("light-mode");
-        }
-        else{
-            element.classList.add("light-mode");
-            element.classList.remove("dark-mode");
-        }
-    }
-}
-else if(document.body.classList.contains('about-us-page')){
-    if(dark){
-        element.classList.add("dark-mode");
-        element.classList.remove("light-mode");
-        button.checked = true;
-        footerBackground.style.backgroundImage = "url(../images/footerBackgroundDarkMode.png)";
-        logoImageAbotUsPage.src = "../images/newtLogoInAboutUsPageWhite.png";
-    }
-    else{
-        element.classList.add("light-mode");
-        element.classList.remove("dark-mode");
-        button.checked = false;
+    else if(document.body.classList.contains('about-us-page')){
         footerBackground.style.backgroundImage = "url(../images/footerBackground.png)";
         logoImageAbotUsPage.src = "../images/newtLogoInAboutUsPage.png";
     }
-    
-    //to change the white or te dark mode
-    function darkMode(){
-        if(button.checked == true){
-            element.classList.add("dark-mode");
-            element.classList.remove("light-mode");
-            footerBackground.style.backgroundImage = "url(../images/footerBackgroundDarkMode.png)";
-            logoImageAbotUsPage.src = "../images/newtLogoInAboutUsPageWhite.png";
-        }
-        else{
-            element.classList.add("light-mode");
-            element.classList.remove("dark-mode");
-            footerBackground.style.backgroundImage = "url(../images/footerBackground.png)";
-            logoImageAbotUsPage.src = "../images/newtLogoInAboutUsPage.png";
-        }
+}
+
+const darkMode = () =>{
+    document.body.classList.remove("light-mode");
+    document.body.classList.add("dark-mode");
+    localStorage.setItem("colorMode", 'enabled');
+    darkModeToggle.checked = true;
+
+    if(document.body.classList.contains('main-page')){
+        logoImage.src = "dist/images/newtLogoInWhite.png";
+        indexMainBackground.style.backgroundImage = "url(dist/images/sectionBackgroundWhite.png)";
+        footerBackground.style.backgroundImage = "url(dist/images/footerBackgroundDarkMode.png)";
+    }
+    else if(document.body.classList.contains('about-us-page')){
+        footerBackground.style.backgroundImage = "url(../images/footerBackgroundDarkMode.png)";
+        logoImageAbotUsPage.src = "../images/newtLogoInAboutUsPageWhite.png";
     }
 }
+
+if(colorMode !== "enabled" && colorMode !== "disable"){
+    if(dark){
+        darkMode();
+    }
+    else{
+        lightMode();
+    }
+}
+
+if(colorMode === "enabled"){
+    darkMode();
+}
+
+darkModeToggle.addEventListener('click', () => {
+    colorMode = localStorage.getItem('colorMode');
+    if(colorMode !== "enabled"){
+        darkMode();
+    }
+    else{
+        lightMode();
+    }
+});
