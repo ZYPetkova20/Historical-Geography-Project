@@ -35,7 +35,7 @@ const darkMode = () =>{
     if(document.body.classList.contains('main-page')){
         logoImage.src = "dist/images/newtLogoInWhite.png";
         indexMainBackground.style.backgroundImage = "url(dist/images/sectionBackgroundWhite.png)";
-        footerBackground.style.backgroundImage = "url(dist/images/footerBackgroundDarkMode.png)";
+        footerBackground.style.backgroundImage = "url(dist/images/footerBackgroundDarkModeIndexPage.png)";
     }
     else if(document.body.classList.contains('about-us-page')){
         footerBackground.style.backgroundImage = "url(../images/footerBackgroundDarkMode.png)";

@@ -153,7 +153,9 @@ section{
 #south-pole .text-wrapper{
     height:390px;
 }
-
+footer{
+    background-image: url(../../../dist/images/footerBackgroundDarkModeIndexPage.png);
+}
 
 //Responsive from 1920px to 1201px
 @media  only screen and  (max-width:1600px){
@@ -166,6 +168,9 @@ section{
     }
     #south-pole .text-wrapper{
         height:370px;
+    }
+    .img-wrapper{
+        transform: scale(0.9);
     }
 }
 @media  only screen and (max-width:1400px){
@@ -189,7 +194,7 @@ section{
         font-size: rem($stF - 1);
     }
     .img-wrapper{
-        transform: scale(0.9);
+        transform: scale(0.8);
     }
     #sea-routh-india-section .text-wrapper{
         height:420px;
