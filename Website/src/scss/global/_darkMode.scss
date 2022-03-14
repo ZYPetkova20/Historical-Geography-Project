@@ -1,16 +1,5 @@
 @use '../util/_colors.scss' as *;
 
-
-
-/*@media (prefers-color-scheme: dark){
-    :root{
-        --primaryCWM:#{$primaryCDM};
-        --primaryNavCDM:#4F4F4F;
-        --primaryTCWM:#{$primaryTCDM};
-        --navBackgroundC:#{$navBackgroundCDM};
-        --miniNavWBC:#{$miniNavWBC};
-    }
-}*/
 .light-mode{
     --primaryCWM: #{$primaryCWM};
     --primaryNavCDM:#{$primaryCWM};
@@ -18,6 +7,8 @@
     --accentTCWM: #{$accentTCWM};
     --navBackgroundC:#{$navBackgroundC};
     --miniNavWBC:hsla(0, 0%, 70%, .5);
+    --cursorOutline:#{$cursorOutline};
+    --cursorInnerCircle:#{$cursorInnerCircle};
 }
 .dark-mode{
     --primaryCWM:#{$primaryCDM};
@@ -25,4 +16,6 @@
     --primaryTCWM:#{$primaryTCDM};
     --navBackgroundC:#{$navBackgroundCDM};
     --miniNavWBC:#{$miniNavWBC};
+    --cursorOutline:#{$cursorOutline};
+    --cursorInnerCircle:#{$cursorInnerCircle};
 }

@@ -3,6 +3,8 @@ $primaryTCWM:#000000; //primary text color in white mode
 $navBackgroundC:hsla(240, 4%, 90%,.7); //primary color for the nav background in white mode
 $inputLines:#848484;//the lines bellow the inputs in the form in white mode
 $miniNavWBC:hsla(0, 0%, 50%, .5);
+$cursorOutline:rgba(149, 149, 149, 1);
+$cursorInnerCircle:rgba(188, 188, 188, 1);
 
 $primaryCDM: #525252; //primary color in dark mode
 $primaryNavCDM:#E5E5E7; //primary nav color in dark mode
@@ -12,8 +14,6 @@ $inputLinesDarkMode:#E5E5E7;//the lines bellow the inputs in the form in white m
 
 $accentTCWM: #DAA520; //it will not change no matter the color mode
 
-$cursorOutline:hsla(0, 0%, 58%, 0.4);//default cursor color 
-$cursorOutlineHoverLinks:hsla(0, 0%, 58%, 0.9);//when the cursor is on link
 
 :root{
     --primaryCWM: #{$primaryCWM};
@@ -23,4 +23,6 @@ $cursorOutlineHoverLinks:hsla(0, 0%, 58%, 0.9);//when the cursor is on link
     --inputLines:#{$inputLines};
     --primaryNavCDM:#{$primaryNavCDM};
     --miniNavWBC:#{$miniNavWBC};
+    --cursorOutline:#{$cursorOutline};
+    --cursorInnerCircle:#{$cursorInnerCircle};
 }

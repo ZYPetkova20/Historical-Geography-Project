@@ -1,4 +1,5 @@
 var cursor = document.querySelector('.cursor');
+var cursorInnerCircle = document.querySelector('.inner-circle');
 
 var moveCursor = (e)=> {
   const mouseY = e.clientY;
@@ -11,9 +12,11 @@ var moveCursor = (e)=> {
 document.querySelectorAll('a').forEach(link => {
   link.addEventListener("mouseleave", ()=> {
     cursor.classList.remove('hover-links');
+    cursorInnerCircle.classList.remove('hover-links');
   });
   link.addEventListener("mouseover", ()=> {
     cursor.classList.add('hover-links');
+    cursorInnerCircle.classList.add('hover-links');
   });
 })
 //animation when you hover links

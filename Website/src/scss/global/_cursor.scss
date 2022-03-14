@@ -1,4 +1,5 @@
-@use '../util/colors' as c;
+@use '../util/utilForward' as *;
+@use '../global/darkMode' as *;
 
 .cursor{
     position: fixed;
@@ -10,15 +11,27 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: c.$cursorOutline;
+    background-color: var(--cursorOutline);
     transition-timing-function: ease;
-    transition-duration: 0.6s;
+    transition-duration: 0.3s;
     transition-property: background;
     z-index: 10000;
 }
-.hover-links{
-    background-color: c.$cursorOutlineHoverLinks;
-    z-index: 100;
+.inner-circle{
+    width:14px;
+    height:14px;
+    border-radius: 50%;
+    background-color:var(--cursorInnerCircle);
+    transition-timing-function: ease;
+    transition-duration: 0.3s;
+    transition-property: background;
+    z-index: 10000;
+}
+.hover-links {
+    background-color: var(--cursorInnerCircle);
+}
+.hover-links .inner-circle{
+    background-color: var(--cursorOutline);
 }
 @media  only screen and (max-width:1200px){
     .cursor{

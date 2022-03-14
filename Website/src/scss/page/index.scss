@@ -139,6 +139,11 @@ section{
     font-size: rem($stF);
     letter-spacing: $bLetterSpasing;
     margin:0px;
+    display: flex;
+    align-items: flex-start;
+}
+.arrow{
+    margin-left:10px;
 }
 #first-circumnavigation .section-title{
     font-size: rem($ntF - 5);
@@ -152,9 +157,6 @@ section{
 }
 #south-pole .text-wrapper{
     height:390px;
-}
-footer{
-    background-image: url(../../../dist/images/footerBackgroundDarkModeIndexPage.png);
 }
 
 //Responsive from 1920px to 1201px
