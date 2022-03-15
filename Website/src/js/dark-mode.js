@@ -8,6 +8,7 @@ let indexMainBackground = document.getElementById('index-main');
 let scrollDownIcon = document.getElementById('scroll-down');
 let logoImageAbotUsPage = document.getElementById('newt-logo-about-us');
 let footerBackground = document.querySelector('footer');
+let arrow = document.querySelectorAll('.arrow');
 
 const lightMode = () =>{
     document.body.classList.remove("dark-mode");
@@ -19,6 +20,9 @@ const lightMode = () =>{
         logoImage.src = "dist/images/newtLogo.png";
         indexMainBackground.style.backgroundImage = "url(dist/images/sectionBackground.png)";
         footerBackground.style.backgroundImage = "url(dist/images/footerBackground.png)";
+        arrow.forEach(arrow=>{
+            arrow.src="dist/images/arrow.png";
+        });
     }
     else if(document.body.classList.contains('about-us-page')){
         footerBackground.style.backgroundImage = "url(../images/footerBackground.png)";
@@ -36,6 +40,9 @@ const darkMode = () =>{
         logoImage.src = "dist/images/newtLogoInWhite.png";
         indexMainBackground.style.backgroundImage = "url(dist/images/sectionBackgroundWhite.png)";
         footerBackground.style.backgroundImage = "url(dist/images/footerBackgroundDarkModeIndexPage.png)";
+        arrow.forEach(arrow=>{
+            arrow.src="dist/images/arrowDarkMode.png";
+        });
     }
     else if(document.body.classList.contains('about-us-page')){
         footerBackground.style.backgroundImage = "url(../images/footerBackgroundDarkMode.png)";
@@ -43,6 +50,7 @@ const darkMode = () =>{
     }
 }
 
+//if you have never set theme check your default theme and use it
 if(colorMode !== "enabled" && colorMode !== "disable"){
     if(dark){
         darkMode();
@@ -52,10 +60,12 @@ if(colorMode !== "enabled" && colorMode !== "disable"){
     }
 }
 
+//if you have set theme before
 if(colorMode === "enabled"){
     darkMode();
 }
 
+//change the theme
 darkModeToggle.addEventListener('click', () => {
     colorMode = localStorage.getItem('colorMode');
     if(colorMode !== "enabled"){
