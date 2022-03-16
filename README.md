@@ -34,10 +34,7 @@
    ## 📋 Description
     
 
-*This repo is all about our Physics Project. Our task was to create an application or a game in C++ . 
-We have decided to make a self-studying proggram which is closely related to electric chains. 
-In the app you can create your own simulations, watch pre-made ones and take tests to sharpen your knowlidge.
-We have also created one page website where you can download the program.*   
+*This repository is all about our History and Geography project. Our task was to create a website connected with both of the humanities. We decided to make a site related to The greatest geography discoveries. In the website you can find information about all of the discoveries. You can find pictures of them, read about their discoverer’s journeys, and see a 3D map with their route.*   
       
 ## 🎬 Demo of the project 
 
