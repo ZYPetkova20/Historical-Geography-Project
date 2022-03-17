@@ -10,7 +10,7 @@
     height:100%;
     z-index: 1000;
     display:none;
-    background-color: hsla(0, 0%, 15%, 0.8);
+    background-color: hsla(0, 0%, 15%, 0.5);
 }
 #sphere-pop-up-wrapper{
     width:1000px;
@@ -20,7 +20,7 @@
     background-color: var(--primaryCWM);
     z-index: 1001;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: hidden ;
 }
 #close-popUp{
     position: absolute;
@@ -42,4 +42,96 @@
     @include flex(row,center,center);
     width:100%;
     height:80%;
+}
+#sphere-background-wrapper{
+    position: absolute;
+    bottom:0;
+    left:0;
+    @include flex(row,center,center);
+    width:100%;
+    height:80%;
+    z-index: -1;
+}
+@media  only screen and (max-width:1900px){
+    #sphere-background-wrapper{
+        img{
+            transform: scale(0.85);
+        }
+    }
+}
+@media  only screen and (max-width:1150px) {
+    #sphere-pop-up-wrapper{
+        width:800px;
+        height:600px;
+        position: relative;
+        @include flex(column, flex-end,center);
+        background-color: var(--primaryCWM);
+        z-index: 1001;
+        overflow-x: hidden;
+        overflow-y: hidden ;
+    }
+    #sphere-background-wrapper{
+        img{
+            transform: scale(0.85);
+        }
+    }
+}
+@media  only screen and (max-width:950px) {
+    #sphere-pop-up-wrapper{
+        width:600px;
+        height:500px;
+    }
+    #sphere-background-wrapper{
+        img{
+            transform: scale(0.8);
+        }
+    }
+}
+@media  only screen and (max-width:675px) {
+    #sphere-pop-up-wrapper{
+        width:500px;
+        height:500px;
+    }
+    #sphere-pop-up-title{
+        font-size: rem($ntF - 15);
+        position: absolute;
+        top:0;
+    }
+    #sphere-background-wrapper{
+        img{
+            transform: scale(0.8);
+        }
+    }
+}
+@media  only screen and (max-width:555px) {
+    #sphere-pop-up-wrapper{
+        width:400px;
+        height:450px;
+    }
+    #sphere-pop-up-title{
+        font-size: rem($ntF - 20);
+        position: absolute;
+        top:0;
+    }
+    #sphere-background-wrapper{
+        img{
+            transform: scale(0.8);
+        }
+    }
+}
+@media  only screen and (max-width:429px) {
+    #sphere-pop-up-wrapper{
+        width:300px;
+        height:450px;
+    }
+    #sphere-pop-up-title{
+        font-size: rem($ntF - 20);
+        position: absolute;
+        top:0;
+    }
+    #sphere-background-wrapper{
+        img{
+            transform: scale(0.8);
+        }
+    }
 }

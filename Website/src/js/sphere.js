@@ -27,9 +27,8 @@ const scene = new THREE.Scene()
             canvas: canvas
         })
 
-        renderer.setSize(1200, 600);
+        renderer.setSize(innerWidth, innerHeight);
         renderer.setPixelRatio(window.devicePixelRatio);
-        
         popUpcontent.appendChild(renderer.domElement);
 
         //create sphere
@@ -42,11 +41,11 @@ const scene = new THREE.Scene()
         group.add(sphere);
         scene.add(group);
 
-        camera.position.z = 15;
+        camera.position.z = 22;
 
         function animate(){
             requestAnimationFrame(animate);
             renderer.render(scene, camera);
-            sphere.rotation.y += 0.001;
+            sphere.rotation.y += 0.002;
         }
         animate();
