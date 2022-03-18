@@ -4,7 +4,6 @@ var cursorInnerCircle = document.querySelector('.inner-circle');
 var moveCursor = (e)=> {
   const mouseY = e.clientY;
   const mouseX = e.clientX;
-   
   cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
 } 
 //set the custom cursor

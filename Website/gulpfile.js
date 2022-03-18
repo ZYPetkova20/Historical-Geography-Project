@@ -4,6 +4,7 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const sass = require('gulp-sass')(require('sass'));
 const terser = require('gulp-terser');
+const babel = require('gulp-babel');
 const scssPath = 'src/scss/**/*.scss';
 const cssPath = 'dist/css/';
 const jsPath = 'src/js/**/*.js';
@@ -22,6 +23,22 @@ function watchScss(){
 
 function js(){
     return src(jsPath)
+    .pipe(babel(
+        {
+            presets: [
+                [
+                  "@babel/env",
+                  {
+                    "targets": {
+                        "browsers": [
+                          "last 2 versions"
+                        ]
+                      }
+                  },
+                ],
+              ],
+        }
+    ))
     .pipe(terser())
     .pipe(dest(jsMinifiedPath))
 }
