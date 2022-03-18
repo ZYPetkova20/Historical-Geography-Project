@@ -12,6 +12,8 @@
         <link rel="stylesheet" type="text/css" href="../../src/fonts/stylesheet2.css"/>
     <!--AOS library-->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Three.js library-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
 </head>
 <body  class="secondary-page">
     <!--Custom cursor-->
@@ -82,6 +84,18 @@
             </div>
         </div>
 
+
+    <!--Sphere pop up-->
+        <div id="sphere-pop-up-background">
+            <div id="sphere-pop-up-wrapper">
+                <p id="close-popUp"  onclick="closePopUp()">+</p>
+                <h4 id="sphere-pop-up-title">Discovery Routh</h4>
+                <div id="sphere-wrapper">
+                    <canvas id="canvas"></canvas>
+                </div>
+            </div>
+        </div>
+
     <!--page content-->
     <div id="starter-div">
         <img src="../images/northPolePageFirstImage.png" alt="Image of America" id="first-image">
@@ -96,7 +110,7 @@
         <p id="starter-text">
             The North Pole was one of the last remaining laurels of earthly exploration, a prize for which countless explorers from many nations had suffered and died for 300 years. And here was the american explorer Robert E. Peary sending word from Indian Harbour, Labrador, that he had reached the pole in April 1909.    
         </p>
-        <h5 id="see-routh" onclick="popUp()">See Routh <img src="../images/globeIcon.png" alt="globe icon" class="globe-icon"></h5>
+        <h5 id="see-routh" onclick="popUp()">See Routh <img src="../images/globeIcon.png" alt="globe icon" id="globe-icon"></h5>
     </div>
     <img src="../images/northPolePageSecondImage.png" alt="Image of America" id="secondImage">
     <div id="the-begging-text-wrapper" data-aos="fade-left"
@@ -150,6 +164,7 @@
     <script src="../js/cursor.js"></script>
     <script src="../js/popUpWindow.js"></script>
     <script src="../js/dark-mode.js"></script>
+    <script src="../js/sphere.js"></script>
 
     <!--AOS library-->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -9,6 +9,7 @@ let scrollDownIcon = document.getElementById('scroll-down');
 let logoImageAbotUsPage = document.getElementById('newt-logo-about-us');
 let footerBackground = document.querySelector('footer');
 let arrow = document.querySelectorAll('.arrow');
+let globeIcon = document.getElementById('globe-icon');
 
 const lightMode = () =>{
     document.body.classList.remove("dark-mode");
@@ -27,6 +28,9 @@ const lightMode = () =>{
     else if(document.body.classList.contains('about-us-page')){
         footerBackground.style.backgroundImage = "url(../images/footerBackground.png)";
         logoImageAbotUsPage.src = "../images/newtLogoInAboutUsPage.png";
+    }
+    else if(document.body.classList.contains('secondary-page')){
+        globeIcon.src = "../images/globeIcon.png"
     }
 }
 
@@ -47,6 +51,9 @@ const darkMode = () =>{
     else if(document.body.classList.contains('about-us-page')){
         footerBackground.style.backgroundImage = "url(../images/footerBackgroundDarkMode.png)";
         logoImageAbotUsPage.src = "../images/newtLogoInAboutUsPageWhite.png";
+    }
+    else if(document.body.classList.contains('secondary-page')){
+        globeIcon.src = "../images/globeIconDarkMode.png";
     }
 }
 

@@ -12,6 +12,8 @@
         <link rel="stylesheet" type="text/css" href="../../src/fonts/stylesheet2.css"/>
     <!--AOS library-->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Three.js library-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
 </head>
 <body class="secondary-page">
     <!--Custom cursor-->
@@ -58,6 +60,7 @@
                 </form>
             </div>
         </div>
+
     <!--Mini nav-->
         <div id="miniNavWrapper">
             <a href="../../index.html">
@@ -81,6 +84,18 @@
             </div>
         </div>
 
+    
+    <!--Sphere pop up-->
+        <div id="sphere-pop-up-background">
+            <div id="sphere-pop-up-wrapper">
+                <p id="close-popUp"  onclick="closePopUp()">+</p>
+                <h4 id="sphere-pop-up-title">Discovery Routh</h4>
+                <div id="sphere-wrapper">
+                    <canvas id="canvas"></canvas>
+                </div>
+            </div>
+        </div>
+
     <!--page content-->
     <div id="starter-div">
         <img src="../images/circumnavigationPageFirstImage.png" alt="Image of America" id="first-image">
@@ -95,7 +110,7 @@
         <p id="starter-text">
             One of the most famous Portuguese-born explorers was Fernao de Magalhaes, who instigated and organized the first circumnavigation from 1519 to 1522. Sailing for the King of Spain, he set out to find a route to the Orient, sailing west around the southern tip of South America. 
         </p>
-        <h5 id="see-routh" onclick="popUp()">See Routh <img src="../images/globeIcon.png" alt="globe icon" class="globe-icon"></h5>
+        <h5 id="see-routh" onclick="popUp()">See Routh <img src="../images/globeIcon.png" alt="globe icon" id="globe-icon"></h5>
     </div>
     <img src="../images/circumnavigationPageSecondImage.png" alt="Image of America" id="secondImage">
     <div id="squadron-sailed-text-wrapper" data-aos="fade-left"
@@ -148,6 +163,7 @@
     <script src="../js/cursor.js"></script>
     <script src="../js/popUpWindow.js"></script>
     <script src="../js/dark-mode.js"></script>
+    <script src="../js/sphere.js"></script>
 
     <!--AOS library-->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
