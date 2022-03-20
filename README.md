@@ -3,6 +3,13 @@
 <img src="https://cdn.discordapp.com/attachments/715634535148027966/949723300593033256/Main_logo.png" width="450px">
 </p>
 
+## ⚙ Access
+
+*You can access our website by pasteing this link into your browser.*
+```
+https://zypetkova20.github.io/Historical-Geography-Project/
+```
+
 ## 🖥 Team Members
 * **Zhanet Petkova** - *Scrum trainer* 
 * **Zhivko Spasov** - *Front-end developer* 
@@ -20,6 +27,7 @@
     <img src="https://cdn.discordapp.com/attachments/715634535148027966/949733918913986641/AOS_Cut.png"/>
     <img src="https://img.icons8.com/color/48/000000/npm.png"/>
     <img src="https://cdn.discordapp.com/attachments/715634535148027966/954792786295681096/babel.png"/>
+    <img src="https://cdn.discordapp.com/attachments/715634535148027966/955211482868621315/Three.js_Icon_1.png"/>
      
 
   ## 🔧 Tools 
