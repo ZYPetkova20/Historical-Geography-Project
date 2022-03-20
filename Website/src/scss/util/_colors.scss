@@ -5,12 +5,15 @@ $inputLines:#848484;//the lines bellow the inputs in the form in white mode
 $miniNavWBC:hsla(0, 0%, 50%, .5);
 $cursorOutline:rgba(149, 149, 149, 1);
 $cursorInnerCircle:rgba(188, 188, 188, 1);
+$pageTransitionCDM: #E5E5E7;
+$pageTransitionCWM: #525252; //primary color for page transition in white mode
 
 $primaryCDM: #525252; //primary color in dark mode
 $primaryNavCDM:#E5E5E7; //primary nav color in dark mode
 $primaryTCDM:#ffffff; //primary text color in dark mode
 $navBackgroundCDM:hsla(0, 0%, 32%,0.7);//primary color for the nav background in dark mode
 $inputLinesDarkMode:#E5E5E7;//the lines bellow the inputs in the form in white mode
+$pageTransitionCDM: #E5E5E7;
 
 $accentTCWM: #DAA520; //it will not change no matter the color mode
 
@@ -25,4 +28,5 @@ $accentTCWM: #DAA520; //it will not change no matter the color mode
     --miniNavWBC:#{$miniNavWBC};
     --cursorOutline:#{$cursorOutline};
     --cursorInnerCircle:#{$cursorInnerCircle};
+    --pageTransitionCWM:#{$pageTransitionCWM};
 }
