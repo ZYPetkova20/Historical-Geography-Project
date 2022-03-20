@@ -5,7 +5,7 @@
 
 ## ⚙ Access
 
-*You can access our website by pasteing this link into your browser.*
+*You can access our website by pasting this link into your browser.*
 ```
 https://zypetkova20.github.io/Historical-Geography-Project/
 ```
