@@ -19,12 +19,12 @@
             </div>
         </div>
         
-    <!--Pop up window-->
+    <!--Feedback pop up window-->
         <div class="popUp-background"></div>
         <div class="popUp-wrapper">
             <div class="popUp-content">
                 <p id="close-popUp">+</p>
-                <form action="mailto:ZZSpasov20@codingburgas.bg?subject=New feedback" method="post">
+                <form action="mailto:ZZSpasov20@codingburgas.bg?subject=New feedback" enctype="text/plain" method="post">
                     <div id="first-form-parth">
                         <div id="first-form-parth-space">
                             <div id="form-title-wrapper">
@@ -34,24 +34,23 @@
                                 <div id="hr-div"></div>
                             </div>
                             <div class="input-and-label-wrapper">
-                                <input type="text" id="name" name="name" placeholder="&nbsp;" required>
-                                <label for="name" class="input-label">Name</label>
+                                <input type="text" id="name" name="Name" placeholder="&nbsp;" required>
+                                <label for="Name" class="input-label">Name</label>
                             </div>
                             <div class="input-and-label-wrapper">
-                                <input type="text" id="last name" name="last name" placeholder="&nbsp;" required>
-                                <label for="last name" class="input-label">Last name</label>
+                                <input type="text" id="last name" name="Last name" placeholder="&nbsp;" required>
+                                <label for="Last name" class="input-label">Last name</label>
                             </div>
                             <div class="input-and-label-wrapper">
-                                <input type="text" id="phone-number" name="phone-number" placeholder="&nbsp;" required>
-                                <label for="phone-number" class="input-label">Phone</label>
+                                <input type="text" id="phone-number" name="Phone number" placeholder="&nbsp;" pattern="[0-9\.]+" minlength="7" maxlength="15">
+                                <label for="Phone number" class="input-label">Phone</label>
                             </div>
                         </div>
                     </div>
                     <div id="second-form-parth">
-                        <label for="feedback" id="messageLabel">Message</label>
-                        <textarea name="feedback" id="textarea"   placeholder="Write text here..." required >
-                        </textarea>
-                        <input type="submit" value="SEND MESSAGE" id="submit-button">
+                        <label for="Feedback" id="messageLabel">Message</label>
+                        <textarea name="Feedback" id="textarea"   placeholder="Write text here..." required></textarea>
+                        <input type="submit" value="SEND MESSAGE" id="submit-button" >
                     </div>
                 </form>
             </div>
