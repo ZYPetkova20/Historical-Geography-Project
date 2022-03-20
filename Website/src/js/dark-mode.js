@@ -18,11 +18,11 @@ const lightMode = () =>{
     darkModeToggle.checked = false;
 
     if(document.body.classList.contains('main-page')){
-        logoImage.src = "dist/images/newtLogo.png";
-        indexMainBackground.style.backgroundImage = "url(dist/images/sectionBackground.png)";
-        footerBackground.style.backgroundImage = "url(dist/images/footerBackground.png)";
+        logoImage.src = "Website/dist/images/newtLogo.png";
+        indexMainBackground.style.backgroundImage = "url(Website/dist/images/sectionBackground.png)";
+        footerBackground.style.backgroundImage = "url(Website/dist/images/footerBackground.png)";
         arrow.forEach(arrow=>{
-            arrow.src="dist/images/arrow.png";
+            arrow.src="Website/dist/images/arrow.png";
         });
     }
     else if(document.body.classList.contains('about-us-page')){
@@ -41,11 +41,11 @@ const darkMode = () =>{
     darkModeToggle.checked = true;
 
     if(document.body.classList.contains('main-page')){
-        logoImage.src = "dist/images/newtLogoInWhite.png";
-        indexMainBackground.style.backgroundImage = "url(dist/images/sectionBackgroundWhite.png)";
-        footerBackground.style.backgroundImage = "url(dist/images/footerBackgroundDarkModeIndexPage.png)";
+        logoImage.src = "Website/dist/images/newtLogoInWhite.png";
+        indexMainBackground.style.backgroundImage = "url(Website/dist/images/sectionBackgroundWhite.png)";
+        footerBackground.style.backgroundImage = "url(Website/dist/images/footerBackgroundDarkModeIndexPage.png)";
         arrow.forEach(arrow=>{
-            arrow.src="dist/images/arrowDarkMode.png";
+            arrow.src="Website/dist/images/arrowDarkMode.png";
         });
     }
     else if(document.body.classList.contains('about-us-page')){

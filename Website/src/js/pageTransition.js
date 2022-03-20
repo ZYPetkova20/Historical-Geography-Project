@@ -12,57 +12,57 @@ window.onload = () => {
             if(document.body.classList.contains('main-page')){
                 if(i == 0){
                     setTimeout(()=>{
-                        window.location.href = "http://127.0.0.1:5500/dist/pages/america.html";
+                        window.location.href = "https://zypetkova20.github.io/Historical-Geography-Project/Website/dist/pages/america.html";
                     },1100);
                 }
                 else if(i == 1){
                     setTimeout(()=>{
-                        window.location.href = "http://127.0.0.1:5500/dist/pages/routeToIndia.html";
+                        window.location.href = "https://zypetkova20.github.io/Historical-Geography-Project/Website/dist/pages/routeToIndia.html";
                     },1100);
                 }
                 else if(i == 2){
                     setTimeout(()=>{
-                        window.location.href = "http://127.0.0.1:5500/dist/pages/circumnavigation.html";
+                        window.location.href = "https://zypetkova20.github.io/Historical-Geography-Project/Website/dist/pages/circumnavigation.html";
                     },1100);
                 }
                 else if(i == 3){
                     setTimeout(()=>{
-                        window.location.href = "http://127.0.0.1:5500/dist/pages/northPole.html";
+                        window.location.href = "https://zypetkova20.github.io/Historical-Geography-Project/Website/dist/pages/northPole.html";
                     },1100);
                 }
                 else if(i == 4){
                     setTimeout(()=>{
-                        window.location.href = "http://127.0.0.1:5500/dist/pages/southPole.html";
+                        window.location.href = "https://zypetkova20.github.io/Historical-Geography-Project/Website/dist/pages/southPole.html";
                     },1100);
                 }
                 else if(i == 5){
                     setTimeout(()=>{
-                        window.location.href = "http://127.0.0.1:5500/dist/pages/america.html";
+                        window.location.href = "https://zypetkova20.github.io/Historical-Geography-Project/Website/dist/pages/america.html";
                     },1100);
                 }
                 else if(i == 6){
                     setTimeout(()=>{
-                        window.location.href = "http://127.0.0.1:5500/dist/pages/routeToIndia.html";
+                        window.location.href = "https://zypetkova20.github.io/Historical-Geography-Project/Website/dist/pages/routeToIndia.html";
                     },1100);
                 }
                 else if(i == 7){
                     setTimeout(()=>{
-                        window.location.href = "http://127.0.0.1:5500/dist/pages/circumnavigation.html";
+                        window.location.href = "https://zypetkova20.github.io/Historical-Geography-Project/Website/dist/pages/circumnavigation.html";
                     },1100);
                 }
                 else if(i == 8){
                     setTimeout(()=>{
-                        window.location.href = "http://127.0.0.1:5500/dist/pages/northPole.html";
+                        window.location.href = "https://zypetkova20.github.io/Historical-Geography-Project/Website/dist/pages/northPole.html";
                     },1100);
                 }
                 else if(i == 9){
                     setTimeout(()=>{
-                        window.location.href = "http://127.0.0.1:5500/dist/pages/southPole.html";
+                        window.location.href = "https://zypetkova20.github.io/Historical-Geography-Project/Website/dist/pages/southPole.html";
                     },1100);
                 }
                 else if(i == 10){
                     setTimeout(()=>{
-                        window.location.href = "http://127.0.0.1:5500/dist/pages/aboutUs.html";
+                        window.location.href = "https://zypetkova20.github.io/Historical-Geography-Project/Website/dist/pages/aboutUs.html";
                     },1100);
                 }
                 
@@ -70,12 +70,12 @@ window.onload = () => {
             else{
                  if(i == 0){
                     setTimeout(()=>{
-                        window.location.href = "http://127.0.0.1:5500/../../index.html";
+                        window.location.href = "https://zypetkova20.github.io/Historical-Geography-Project/index.html";
                     },1100);
                 }  
                 else if(i ==1){
                     setTimeout(()=>{
-                        window.location.href = "http://127.0.0.1:5500/dist/pages/aboutUs.html";
+                        window.location.href = "https://zypetkova20.github.io/Historical-Geography-Project/Website/dist/pages/aboutUs.html";
                     },1100);
                 }  
             }
