@@ -32,7 +32,9 @@
     <img src="https://img.icons8.com/color/48/000000/git.png"/>
     <img src="https://img.icons8.com/fluency/48/000000/adobe-photoshop.png"/>
       
-   ## 📋 Description
+  ## 📄 Documents
+      
+  ## 📋 Description
     
 
 *This repository is all about our History and Geography project. Our task was to create a website connected with both of the humanities. We decided to make a site related to The greatest geography discoveries. In the website you can find information about all of the discoveries. You can find pictures of them, read about their discoverer’s journeys, and see a 3D map with their route.*   
@@ -48,6 +50,6 @@
 You can download our project by using the green "Code" button.
 
 Or by pasting the following code in your CMD:
-https://github.com/ZYPetkova20/Historical-Geography-Project.git
+git clone https://github.com/ZYPetkova20/Historical-Geography-Project.git
 ```
    
