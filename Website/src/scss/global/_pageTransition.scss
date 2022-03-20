@@ -6,12 +6,12 @@
     left:0;
     top:0;
     z-index: 10000000;
-    background-color: var(--pageTransitionCWM);
+    background-color: #858585;
     pointer-events: none ;
-    transition: 0.5s ;
+    transition: 0.3s ;
     transform: translateX(-100%);
     border-style: solid;
-    border-color: var(--pageTransitionCWM);
+    border-color: #858585;
     border-width: 100px;
     margin: 0;
 }
@@ -33,8 +33,4 @@
 }
 .transition.active{
     transform: translateX(0%) ;
-}
-.transition.notActive{
-    transform: translateX(0%) ;
-    transition: 0s;
 }
