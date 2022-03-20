@@ -19,3 +19,17 @@ body {
     width:100%;
     height:100%;
 }
+
+::-webkit-scrollbar {
+    width: 8.5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #daa5209d; 
+    border-radius: 10px;
+}
