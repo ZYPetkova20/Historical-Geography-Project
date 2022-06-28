@@ -20,6 +20,14 @@ body {
     height:100%;
 }
 
+.main-for-responsive{
+    width:1920px;
+    height:unset;
+    display: flex;
+    position: relative;
+    margin:auto;
+}
+
 ::-webkit-scrollbar {
     width: 8.5px;
 }
