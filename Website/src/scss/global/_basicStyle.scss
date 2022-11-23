@@ -20,12 +20,13 @@ body {
     height:100%;
 }
 
+.main-for-responsive-wrapper{
+    width:100%;
+    height:100%;
+}
 .main-for-responsive{
-    width:1920px;
-    height:unset;
-    display: flex;
-    position: relative;
-    margin:auto;
+    max-width:1920px;
+    margin: auto;
 }
 
 ::-webkit-scrollbar {

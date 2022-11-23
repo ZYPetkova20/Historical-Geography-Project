@@ -12,10 +12,9 @@ body{
 #startup-content-wrapper{
     @include flex(column,flex-end,center);
     width:100%;
-    height:100%;
     min-height:350px;
+    height:100vh;
     scroll-snap-align:start;
-    background-color: var(--primaryNavCDM);
 }
 #startup-content{
     width:100%;
@@ -92,9 +91,6 @@ body{
     display: none;
 }
 main{
-    width:100%;
-    display: flex;
-    flex-direction: column;
     background-image: url(../../images/sectionBackground.png);
 }
 section{
